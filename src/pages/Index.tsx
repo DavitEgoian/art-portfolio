@@ -54,7 +54,7 @@ const Index = () => {
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://img.icons8.com/fluency/512/safari.png"
+            icon="https://cdn-icons-png.flaticon.com/512/975/975645.png"
             alt="Safari"
             className="top-[65%] left-12"
             size={52}
@@ -164,7 +164,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center text-muted-foreground mb-12">
+        <div className="flex items-center justify-center text-foreground mb-12">
           <img src={macosFolder} alt="Folder" className="w-14 h-14" />
           <span className="text-xl">poster_collections</span>
         </div>
@@ -182,7 +182,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center text-muted-foreground mb-12">
+        <div className="flex items-center justify-center text-foreground mb-12">
           <img src={macosFolder} alt="Folder" className="w-14 h-14" />
           <span className="text-xl">poster_collections</span>
         </div>
@@ -241,7 +241,7 @@ const Index = () => {
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://img.icons8.com/fluency/512/pdf.png"
+            icon="https://cdn-icons-png.flaticon.com/512/337/337946.png"
             alt="CV Document"
             className="bottom-16 right-[12%]"
             size={48}
