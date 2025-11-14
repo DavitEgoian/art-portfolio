@@ -118,67 +118,53 @@ const Index = () => {
       </section>
 
       {/* Portfolio Grid Section */}
-      <section className="max-w-4xl mx-auto px-4 py-24">
-        <div className="space-y-16">
+      <section className="max-w-7xl mx-auto px-4 py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <PortfolioCard 
             image={project1}
             alt="Creative workspace flat lay"
-            className="h-[600px]"
+            className="h-[400px]"
           />
-          
-          <div className="flex items-center justify-center gap-3 text-muted-foreground">
-            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
-            <span className="text-sm">creative_workspace.jpg</span>
-          </div>
-
           <PortfolioCard 
             image={project2}
             alt="Mountain landscape poster"
-            className="h-[600px]"
+            className="h-[400px]"
           />
-          
-          <div className="flex items-center justify-center gap-3 text-muted-foreground">
-            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
-            <span className="text-sm">poster_collections</span>
-          </div>
+        </div>
 
+        <div className="flex items-center justify-center gap-3 text-muted-foreground mb-12">
+          <img src={macosFolder} alt="Folder" className="w-7 h-7" />
+          <span className="text-lg">poster_collections</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <PortfolioCard 
             image={project3}
             alt="Movies poster design"
-            className="h-[600px]"
+            className="h-[400px]"
           />
-          
-          <div className="flex items-center justify-center gap-3 text-muted-foreground">
-            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
-            <span className="text-sm">movie_posters.jpg</span>
-          </div>
-
           <PortfolioCard 
             image={project4}
             alt="Abstract blue dots artwork"
-            className="h-[600px]"
+            className="h-[400px]"
           />
-          
-          <div className="flex items-center justify-center gap-3 text-muted-foreground">
-            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
-            <span className="text-sm">poster_collections</span>
-          </div>
+        </div>
 
+        <div className="flex items-center justify-center gap-3 text-muted-foreground mb-12">
+          <img src={macosFolder} alt="Folder" className="w-7 h-7" />
+          <span className="text-lg">poster_collections</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <PortfolioCard 
             image={project5}
             alt="Polina typographic poster"
-            className="h-[600px]"
+            className="h-[400px]"
           />
-          
-          <div className="flex items-center justify-center gap-3 text-muted-foreground">
-            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
-            <span className="text-sm">typography_design.jpg</span>
-          </div>
-
           <PortfolioCard 
             image={project6}
             alt="Typographic number design"
-            className="h-[600px]"
+            className="h-[400px]"
           />
         </div>
       </section>
