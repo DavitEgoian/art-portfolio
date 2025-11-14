@@ -1,12 +1,265 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Folder, FileText, Chrome, Image as ImageIcon } from "lucide-react";
+import { FloatingIcon } from "@/components/FloatingIcon";
+import { PortfolioCard } from "@/components/PortfolioCard";
+import project1 from "@/assets/project-1.jpg";
+import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.jpg";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+        {/* Floating Icons */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Left side icons */}
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            alt="Folder"
+            className="top-12 left-12"
+            size={64}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/512px-Adobe_Illustrator_CC_icon.svg.png"
+            alt="Adobe Illustrator"
+            className="top-32 left-24"
+            size={56}
+            delay="delayed"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png"
+            alt="Adobe Photoshop"
+            className="top-[60%] left-16"
+            size={56}
+            delay="slow"
+          />
+          <FloatingIcon 
+            icon="https://cdn-icons-png.flaticon.com/512/2504/2504929.png"
+            alt="Trash"
+            className="top-24 left-[15%]"
+            size={48}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            alt="Projects Folder"
+            className="top-[45%] left-20"
+            size={56}
+            delay="delayed"
+          />
+          
+          {/* Right side icons */}
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png"
+            alt="Figma"
+            className="top-20 right-12"
+            size={56}
+            delay="slow"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            alt="Folder"
+            className="top-16 right-[20%]"
+            size={60}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://cdn-icons-png.flaticon.com/512/2521/2521803.png"
+            alt="PDF"
+            className="top-12 right-32"
+            size={48}
+            delay="delayed"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/512px-Spotify_logo_without_text.svg.png"
+            alt="Spotify"
+            className="top-[55%] left-[12%]"
+            size={52}
+            delay="slow"
+          />
+          <FloatingIcon 
+            icon="https://cdn-icons-png.flaticon.com/512/7655/7655683.png"
+            alt="Image"
+            className="top-[35%] left-[18%]"
+            size={64}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://cdn-icons-png.flaticon.com/512/2521/2521803.png"
+            alt="Document"
+            className="top-8 right-[8%]"
+            size={52}
+            delay="delayed"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            alt="Graphics Folder"
+            className="top-[40%] right-[15%]"
+            size={58}
+            delay="slow"
+          />
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 text-center">
+          <h1 className="text-6xl md:text-8xl font-light mb-4 tracking-tight">
+            hi! welcome to<br />my showcase
+          </h1>
+          <p className="text-2xl md:text-3xl text-muted-foreground font-light">
+            ( 2025 )
+          </p>
+        </div>
+      </section>
+
+      {/* Portfolio Grid Section */}
+      <section className="max-w-7xl mx-auto px-4 py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <PortfolioCard 
+            image={project1}
+            alt="Creative workspace flat lay"
+            className="h-[400px]"
+          />
+          <PortfolioCard 
+            image={project2}
+            alt="Mountain landscape poster"
+            className="h-[400px]"
+          />
+        </div>
+
+        {/* Folder Label */}
+        <div className="flex items-center gap-2 mb-12 text-muted-foreground">
+          <Folder className="w-5 h-5 text-blue-400" />
+          <span className="text-sm">poster_collections</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <PortfolioCard 
+            image={project3}
+            alt="Movies poster design"
+            className="h-[400px]"
+          />
+          <PortfolioCard 
+            image={project4}
+            alt="Abstract blue dots artwork"
+            className="h-[400px]"
+          />
+        </div>
+
+        {/* Folder Label */}
+        <div className="flex items-center gap-2 mb-12 text-muted-foreground">
+          <Folder className="w-5 h-5 text-blue-400" />
+          <span className="text-sm">poster_collections</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <PortfolioCard 
+            image={project5}
+            alt="Polina typographic poster"
+            className="h-[400px]"
+          />
+          <PortfolioCard 
+            image={project6}
+            alt="Typographic number design"
+            className="h-[400px]"
+          />
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        {/* More floating icons */}
+        <div className="absolute inset-0 pointer-events-none">
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            alt="Folder"
+            className="bottom-24 left-12"
+            size={56}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/512px-Adobe_Illustrator_CC_icon.svg.png"
+            alt="Adobe Illustrator"
+            className="bottom-[40%] left-24"
+            size={52}
+            delay="delayed"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png"
+            alt="Adobe Photoshop"
+            className="bottom-[20%] left-[8%]"
+            size={56}
+            delay="slow"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png"
+            alt="Figma"
+            className="bottom-[35%] right-16"
+            size={56}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            alt="Projects Folder"
+            className="bottom-[15%] left-[15%]"
+            size={58}
+            delay="delayed"
+          />
+          <FloatingIcon 
+            icon="https://cdn-icons-png.flaticon.com/512/2521/2521803.png"
+            alt="PDF"
+            className="bottom-32 right-24"
+            size={48}
+            delay="slow"
+          />
+        </div>
+
+        {/* Browser Mockup */}
+        <div className="max-w-3xl mx-auto relative z-10">
+          <div className="bg-card rounded-lg overflow-hidden shadow-2xl">
+            {/* Browser Chrome */}
+            <div className="bg-secondary px-4 py-3 flex items-center gap-2 border-b border-border">
+              <div className="flex gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div className="flex-1 mx-4">
+                <div className="bg-muted rounded px-4 py-1 text-sm text-muted-foreground flex items-center gap-2">
+                  <Chrome className="w-4 h-4" />
+                  <span>https://www.behance.net/polinakotryniak</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Browser Content */}
+            <div className="bg-background p-12 text-center">
+              <h2 className="text-5xl md:text-6xl font-serif mb-8 italic">
+                Thank You<br />for Attention
+              </h2>
+              <div className="flex justify-center mb-8">
+                <img 
+                  src={profilePhoto} 
+                  alt="Polina Kotryniak" 
+                  className="w-40 h-40 rounded-full object-cover"
+                />
+              </div>
+              <a 
+                href="https://www.behance.net/polinakotryniak"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline transition-all text-sm"
+              >
+                polina_01.jpg
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
