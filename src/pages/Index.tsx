@@ -54,7 +54,7 @@ const Index = () => {
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/5/59/Safari_browser_logo.svg"
+            icon="https://img.icons8.com/fluency/512/safari.png"
             alt="Safari"
             className="top-[65%] left-12"
             size={52}
@@ -63,21 +63,21 @@ const Index = () => {
           
           {/* Icons above the text */}
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/2504/2504929.png"
+            icon="https://img.icons8.com/fluency/512/trash.png"
             alt="Trash"
             className="top-[15%] left-[38%]"
             size={44}
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
+            icon="https://img.icons8.com/fluency/512/pdf.png"
             alt="Document"
             className="top-[20%] left-[45%]"
             size={48}
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/7655/7655683.png"
+            icon="https://img.icons8.com/fluency/512/image.png"
             alt="Image File"
             className="top-[18%] right-[42%]"
             size={52}
@@ -93,7 +93,7 @@ const Index = () => {
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://cdn.iconscout.com/icon/free/png-256/free-calendar-icon-download-in-svg-png-gif-file-formats--date-schedule-event-app-pack-user-interface-icons-1184335.png"
+            icon="https://img.icons8.com/fluency/512/calendar.png"
             alt="Notes"
             className="top-[72%] right-[38%]"
             size={46}
@@ -130,7 +130,7 @@ const Index = () => {
             delay="slow"
           />
           <FloatingIcon 
-            icon="https://cdn.iconscout.com/icon/free/png-256/free-calendar-icon-download-in-svg-png-gif-file-formats--date-schedule-event-app-pack-user-interface-icons-1184335.png"
+            icon="https://img.icons8.com/fluency/512/calendar.png"
             alt="Calendar"
             className="top-[15%] right-[5%]"
             size={52}
@@ -241,7 +241,7 @@ const Index = () => {
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
+            icon="https://img.icons8.com/fluency/512/pdf.png"
             alt="CV Document"
             className="bottom-16 right-[12%]"
             size={48}
