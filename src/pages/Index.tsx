@@ -8,7 +8,7 @@ import project4 from "@/assets/project-4.jpg";
 import project5 from "@/assets/project-5.jpg";
 import project6 from "@/assets/project-6.jpg";
 import profilePhoto from "@/assets/profile-photo.jpg";
-import macosFolder from "@/assets/macos-folder.png";
+import macosFolder from "@/assets/macos-folder-transparent.png";
 
 const Index = () => {
   return (
