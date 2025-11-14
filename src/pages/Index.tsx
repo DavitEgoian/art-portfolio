@@ -151,16 +151,16 @@ const Index = () => {
 
       {/* Portfolio Grid Section */}
       <section className="max-w-7xl mx-auto px-4 py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
           <PortfolioCard 
             image={project1}
             alt="Creative workspace flat lay"
-            className="h-[400px]"
+            className="h-[500px]"
           />
           <PortfolioCard 
             image={project2}
             alt="Mountain landscape poster"
-            className="h-[400px]"
+            className="h-[500px]"
           />
         </div>
 
@@ -169,16 +169,16 @@ const Index = () => {
           <span className="text-lg">poster_collections</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
           <PortfolioCard 
             image={project3}
             alt="Movies poster design"
-            className="h-[400px]"
+            className="h-[500px]"
           />
           <PortfolioCard 
             image={project4}
             alt="Abstract blue dots artwork"
-            className="h-[400px]"
+            className="h-[500px]"
           />
         </div>
 
@@ -187,16 +187,16 @@ const Index = () => {
           <span className="text-lg">poster_collections</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <PortfolioCard 
             image={project5}
             alt="Polina typographic poster"
-            className="h-[400px]"
+            className="h-[500px]"
           />
           <PortfolioCard 
             image={project6}
             alt="Typographic number design"
-            className="h-[400px]"
+            className="h-[500px]"
           />
         </div>
       </section>
