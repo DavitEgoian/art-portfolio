@@ -1,4 +1,4 @@
-import { Chrome } from "lucide-react";
+import { Search } from "lucide-react";
 import { FloatingIcon } from "@/components/FloatingIcon";
 import { PortfolioCard } from "@/components/PortfolioCard";
 import project1 from "@/assets/project-1.jpg";
@@ -267,8 +267,8 @@ const Index = () => {
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
               </div>
               <div className="flex-1 mx-4">
-                <div className="bg-muted rounded px-4 py-1 text-sm text-muted-foreground flex items-center gap-2">
-                  <Chrome className="w-4 h-4" />
+                <div className="bg-white rounded-full px-4 py-2 text-sm text-black flex items-center gap-2">
+                  <Search className="w-4 h-4 text-gray-500" />
                   <span>https://www.behance.net/polinakotryniak</span>
                 </div>
               </div>
