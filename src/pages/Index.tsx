@@ -275,8 +275,8 @@ const Index = () => {
             </div>
 
             {/* Browser Content */}
-            <div className="bg-background p-12 text-center">
-              <h2 className="text-5xl md:text-6xl font-serif mb-8 italic">
+            <div className="bg-white p-12 text-center">
+              <h2 className="text-5xl md:text-6xl font-serif mb-8 italic text-black">
                 Thank You<br />for Attention
               </h2>
               <div className="flex justify-center mb-8">
