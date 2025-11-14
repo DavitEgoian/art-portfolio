@@ -26,83 +26,76 @@ const Index = () => {
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/512px-Adobe_Illustrator_CC_icon.svg.png"
+            icon="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
             alt="Adobe Illustrator"
-            className="top-32 left-24"
+            className="top-24 left-20"
             size={56}
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png"
+            icon="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
             alt="Adobe Photoshop"
-            className="top-[60%] left-16"
+            className="top-[20%] left-8"
             size={56}
             delay="slow"
           />
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/2504/2504929.png"
-            alt="Trash"
-            className="top-24 left-[15%]"
-            size={48}
+            icon={macosFolder}
+            alt="Projects Folder"
+            className="top-[35%] left-16"
+            size={56}
+            delay="delayed"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+            alt="Spotify"
+            className="top-[50%] left-24"
+            size={52}
             delay="normal"
           />
           <FloatingIcon 
-            icon={macosFolder}
-            alt="Projects Folder"
-            className="top-[45%] left-20"
-            size={56}
-            delay="delayed"
+            icon="https://upload.wikimedia.org/wikipedia/commons/5/59/Safari_browser_logo.svg"
+            alt="Safari"
+            className="top-[65%] left-12"
+            size={52}
+            delay="slow"
           />
           
           {/* Right side icons */}
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png"
+            icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
             alt="Figma"
-            className="top-20 right-12"
+            className="top-16 right-16"
             size={56}
             delay="slow"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Folder"
-            className="top-16 right-[20%]"
+            className="top-8 right-[25%]"
             size={60}
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/2521/2521803.png"
-            alt="PDF"
-            className="top-12 right-32"
+            icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
+            alt="CV Document"
+            className="top-4 right-[8%]"
             size={48}
-            delay="delayed"
-          />
-          <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/512px-Spotify_logo_without_text.svg.png"
-            alt="Spotify"
-            className="top-[55%] left-[12%]"
-            size={52}
-            delay="slow"
-          />
-          <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/7655/7655683.png"
-            alt="Image"
-            className="top-[35%] left-[18%]"
-            size={64}
-            delay="normal"
-          />
-          <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/2521/2521803.png"
-            alt="Document"
-            className="top-8 right-[8%]"
-            size={52}
             delay="delayed"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Graphics Folder"
-            className="top-[40%] right-[15%]"
+            className="top-[30%] right-[18%]"
             size={58}
             delay="slow"
+          />
+          <FloatingIcon 
+            icon="https://cdn.iconscout.com/icon/free/png-256/free-calendar-icon-download-in-svg-png-gif-file-formats--date-schedule-event-app-pack-user-interface-icons-1184335.png"
+            alt="Calendar"
+            className="top-[15%] right-[5%]"
+            size={52}
+            delay="normal"
           />
         </div>
 
@@ -181,39 +174,46 @@ const Index = () => {
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/512px-Adobe_Illustrator_CC_icon.svg.png"
+            icon="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
             alt="Adobe Illustrator"
-            className="bottom-[40%] left-24"
+            className="bottom-[40%] left-20"
             size={52}
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png"
+            icon="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
             alt="Adobe Photoshop"
-            className="bottom-[20%] left-[8%]"
+            className="bottom-[25%] left-[10%]"
             size={56}
             delay="slow"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png"
+            icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
             alt="Figma"
-            className="bottom-[35%] right-16"
+            className="bottom-[35%] right-[8%]"
             size={56}
             delay="normal"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Projects Folder"
-            className="bottom-[15%] left-[15%]"
+            className="bottom-[20%] left-[18%]"
             size={58}
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/2521/2521803.png"
-            alt="PDF"
-            className="bottom-32 right-24"
+            icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
+            alt="CV Document"
+            className="bottom-16 right-[12%]"
             size={48}
             delay="slow"
+          />
+          <FloatingIcon 
+            icon="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+            alt="Spotify"
+            className="bottom-[45%] left-[8%]"
+            size={50}
+            delay="normal"
           />
         </div>
 
