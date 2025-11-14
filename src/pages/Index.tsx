@@ -164,7 +164,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center gap-2 text-muted-foreground mb-12">
+        <div className="flex items-center justify-center text-muted-foreground mb-12">
           <img src={macosFolder} alt="Folder" className="w-14 h-14" />
           <span className="text-xl">poster_collections</span>
         </div>
@@ -182,7 +182,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center gap-2 text-muted-foreground mb-12">
+        <div className="flex items-center justify-center text-muted-foreground mb-12">
           <img src={macosFolder} alt="Folder" className="w-14 h-14" />
           <span className="text-xl">poster_collections</span>
         </div>
