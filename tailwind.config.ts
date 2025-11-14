@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        playfair: ['"Playfair Display"', 'serif'],
+        baskerville: ['"Libre Baskerville"', 'Georgia', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
