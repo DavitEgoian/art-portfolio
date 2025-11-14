@@ -1,4 +1,4 @@
-import { Folder, FileText, Chrome, Image as ImageIcon } from "lucide-react";
+import { Chrome } from "lucide-react";
 import { FloatingIcon } from "@/components/FloatingIcon";
 import { PortfolioCard } from "@/components/PortfolioCard";
 import project1 from "@/assets/project-1.jpg";
@@ -8,6 +8,7 @@ import project4 from "@/assets/project-4.jpg";
 import project5 from "@/assets/project-5.jpg";
 import project6 from "@/assets/project-6.jpg";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import macosFolder from "@/assets/macos-folder.png";
 
 const Index = () => {
   return (
@@ -18,7 +19,7 @@ const Index = () => {
         <div className="absolute inset-0 pointer-events-none">
           {/* Left side icons */}
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            icon={macosFolder}
             alt="Folder"
             className="top-12 left-12"
             size={64}
@@ -46,7 +47,7 @@ const Index = () => {
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            icon={macosFolder}
             alt="Projects Folder"
             className="top-[45%] left-20"
             size={56}
@@ -62,7 +63,7 @@ const Index = () => {
             delay="slow"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            icon={macosFolder}
             alt="Folder"
             className="top-16 right-[20%]"
             size={60}
@@ -97,7 +98,7 @@ const Index = () => {
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            icon={macosFolder}
             alt="Graphics Folder"
             className="top-[40%] right-[15%]"
             size={58}
@@ -117,55 +118,67 @@ const Index = () => {
       </section>
 
       {/* Portfolio Grid Section */}
-      <section className="max-w-7xl mx-auto px-4 py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <section className="max-w-4xl mx-auto px-4 py-24">
+        <div className="space-y-16">
           <PortfolioCard 
             image={project1}
             alt="Creative workspace flat lay"
-            className="h-[400px]"
+            className="h-[600px]"
           />
+          
+          <div className="flex items-center justify-center gap-3 text-muted-foreground">
+            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
+            <span className="text-sm">creative_workspace.jpg</span>
+          </div>
+
           <PortfolioCard 
             image={project2}
             alt="Mountain landscape poster"
-            className="h-[400px]"
+            className="h-[600px]"
           />
-        </div>
+          
+          <div className="flex items-center justify-center gap-3 text-muted-foreground">
+            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
+            <span className="text-sm">poster_collections</span>
+          </div>
 
-        {/* Folder Label */}
-        <div className="flex items-center gap-2 mb-12 text-muted-foreground">
-          <Folder className="w-5 h-5 text-blue-400" />
-          <span className="text-sm">poster_collections</span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <PortfolioCard 
             image={project3}
             alt="Movies poster design"
-            className="h-[400px]"
+            className="h-[600px]"
           />
+          
+          <div className="flex items-center justify-center gap-3 text-muted-foreground">
+            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
+            <span className="text-sm">movie_posters.jpg</span>
+          </div>
+
           <PortfolioCard 
             image={project4}
             alt="Abstract blue dots artwork"
-            className="h-[400px]"
+            className="h-[600px]"
           />
-        </div>
+          
+          <div className="flex items-center justify-center gap-3 text-muted-foreground">
+            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
+            <span className="text-sm">poster_collections</span>
+          </div>
 
-        {/* Folder Label */}
-        <div className="flex items-center gap-2 mb-12 text-muted-foreground">
-          <Folder className="w-5 h-5 text-blue-400" />
-          <span className="text-sm">poster_collections</span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <PortfolioCard 
             image={project5}
             alt="Polina typographic poster"
-            className="h-[400px]"
+            className="h-[600px]"
           />
+          
+          <div className="flex items-center justify-center gap-3 text-muted-foreground">
+            <img src={macosFolder} alt="Folder" className="w-6 h-6" />
+            <span className="text-sm">typography_design.jpg</span>
+          </div>
+
           <PortfolioCard 
             image={project6}
             alt="Typographic number design"
-            className="h-[400px]"
+            className="h-[600px]"
           />
         </div>
       </section>
@@ -175,7 +188,7 @@ const Index = () => {
         {/* More floating icons */}
         <div className="absolute inset-0 pointer-events-none">
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            icon={macosFolder}
             alt="Folder"
             className="bottom-24 left-12"
             size={56}
@@ -203,7 +216,7 @@ const Index = () => {
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Folder_icon_%28blue%29.svg/512px-Folder_icon_%28blue%29.svg.png"
+            icon={macosFolder}
             alt="Projects Folder"
             className="bottom-[15%] left-[15%]"
             size={58}
