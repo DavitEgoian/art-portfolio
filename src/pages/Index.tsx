@@ -22,42 +22,42 @@ const Index = () => {
             icon={macosFolder}
             alt="Folder"
             className="top-12 left-12"
-            size={64}
+            size={72}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
             alt="Adobe Illustrator"
             className="top-24 left-20"
-            size={56}
+            size={64}
             delay="delayed"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
             alt="Adobe Photoshop"
             className="top-[20%] left-8"
-            size={56}
+            size={64}
             delay="slow"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Projects Folder"
             className="top-[35%] left-16"
-            size={56}
+            size={64}
             delay="delayed"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
             alt="Spotify"
             className="top-[50%] left-24"
-            size={52}
+            size={60}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/5/59/Safari_browser_logo.svg"
             alt="Safari"
             className="top-[65%] left-12"
-            size={52}
+            size={60}
             delay="slow"
           />
           
@@ -105,45 +105,45 @@ const Index = () => {
             icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
             alt="Figma"
             className="top-16 right-16"
-            size={56}
+            size={64}
             delay="slow"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Folder"
             className="top-8 right-[25%]"
-            size={60}
+            size={68}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
             alt="CV Document"
             className="top-4 right-[8%]"
-            size={48}
+            size={56}
             delay="delayed"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Graphics Folder"
             className="top-[30%] right-[18%]"
-            size={58}
+            size={66}
             delay="slow"
           />
           <FloatingIcon 
             icon="https://cdn.iconscout.com/icon/free/png-256/free-calendar-icon-download-in-svg-png-gif-file-formats--date-schedule-event-app-pack-user-interface-icons-1184335.png"
             alt="Calendar"
             className="top-[15%] right-[5%]"
-            size={52}
+            size={60}
             delay="normal"
           />
         </div>
 
         {/* Hero Content */}
         <div className="relative z-10 text-center">
-          <h1 className="text-6xl md:text-8xl font-light mb-4 tracking-tight">
+          <h1 className="text-7xl md:text-9xl font-light mb-6 tracking-tight">
             hi! welcome to<br />my showcase
           </h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground font-light">
+          <p className="text-3xl md:text-4xl text-muted-foreground font-light">
             ( 2025 )
           </p>
         </div>
