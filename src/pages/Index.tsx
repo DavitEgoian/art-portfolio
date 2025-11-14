@@ -61,6 +61,43 @@ const Index = () => {
             delay="slow"
           />
           
+          {/* Center area icons - closer to text */}
+          <FloatingIcon 
+            icon="https://cdn-icons-png.flaticon.com/512/2504/2504929.png"
+            alt="Trash"
+            className="top-[25%] left-[35%]"
+            size={44}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
+            alt="Document"
+            className="top-[45%] left-[28%]"
+            size={48}
+            delay="delayed"
+          />
+          <FloatingIcon 
+            icon={macosFolder}
+            alt="Photo Folder"
+            className="top-[60%] left-[38%]"
+            size={50}
+            delay="slow"
+          />
+          <FloatingIcon 
+            icon="https://cdn-icons-png.flaticon.com/512/7655/7655683.png"
+            alt="Image File"
+            className="top-[35%] right-[32%]"
+            size={52}
+            delay="normal"
+          />
+          <FloatingIcon 
+            icon="https://cdn.iconscout.com/icon/free/png-256/free-calendar-icon-download-in-svg-png-gif-file-formats--date-schedule-event-app-pack-user-interface-icons-1184335.png"
+            alt="Notes"
+            className="top-[55%] right-[28%]"
+            size={46}
+            delay="delayed"
+          />
+          
           {/* Right side icons */}
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
