@@ -6,7 +6,7 @@ interface PortfolioCardProps {
 
 export const PortfolioCard = ({ image, alt, className = "" }: PortfolioCardProps) => {
   return (
-    <div className={`portfolio-card rounded-lg overflow-hidden bg-card cursor-pointer ${className}`}>
+    <div className={`portfolio-card rounded-none overflow-hidden bg-card cursor-pointer ${className}`}>
       <img 
         src={image} 
         alt={alt} 
