@@ -278,7 +278,7 @@ const Index = () => {
         </div>
 
         {/* Browser Mockup */}
-        <div className="max-w-3xl mx-auto relative z-10">
+        <div className="max-w-2xl mx-auto relative z-10">
           <div className="bg-card rounded-lg overflow-hidden shadow-2xl">
             {/* Browser Chrome */}
             <div className="bg-secondary px-4 py-3 flex items-center gap-3 border-b border-border">
@@ -307,15 +307,15 @@ const Index = () => {
             </div>
 
             {/* Browser Content */}
-            <div className="bg-white p-12 text-center">
-              <h2 className="text-5xl md:text-6xl font-semibold italic text-black mb-8">
+            <div className="bg-white p-16 text-center">
+              <h2 className="text-5xl md:text-6xl font-semibold italic text-black mb-12">
                 Thank You<br />for Attention
               </h2>
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-12">
                 <img 
                   src={profilePhoto} 
                   alt="Polina Kotryniak" 
-                  className="w-40 h-40 rounded-none object-cover"
+                  className="w-48 h-48 rounded-none object-cover"
                 />
               </div>
             </div>
