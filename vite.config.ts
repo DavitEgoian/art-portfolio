@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
-      "@": path.resolve(new URL(import.meta.url).pathname, "./src"),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 }));
