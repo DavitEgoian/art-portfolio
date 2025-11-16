@@ -187,7 +187,7 @@ const Index = () => {
           <span className="text-xl">poster_collections</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-8">
           <PortfolioCard 
             image={project5}
             alt="Polina typographic poster"
