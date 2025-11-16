@@ -288,17 +288,9 @@ const Index = () => {
                 <img 
                   src={profilePhoto} 
                   alt="Polina Kotryniak" 
-                  className="w-40 h-40 rounded-full object-cover"
+                  className="w-40 h-40 rounded-none object-cover"
                 />
               </div>
-              <a 
-                href="https://www.behance.net/polinakotryniak"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent hover:underline transition-all text-sm"
-              >
-                polina_01.jpg
-              </a>
             </div>
           </div>
         </div>
