@@ -200,7 +200,7 @@ const Index = () => {
       </section>
 
       {/* Footer Section */}
-      <section className="relative py-12 px-4 overflow-hidden">
+      <section className="relative py-6 px-4 overflow-hidden">
         {/* More floating icons */}
         <div className="absolute inset-0 pointer-events-none z-0">
           {/* Top left icons */}
