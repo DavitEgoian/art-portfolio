@@ -21,43 +21,43 @@ const Index = () => {
           <FloatingIcon 
             icon={macosFolder}
             alt="Folder"
-            className="top-12 left-12"
-            size={64}
+            className="top-[8%] left-[8%]"
+            size={90}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
             alt="Adobe Illustrator"
-            className="top-24 left-20"
-            size={56}
+            className="top-[18%] left-[15%]"
+            size={85}
             delay="delayed"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
             alt="Adobe Photoshop"
-            className="top-[20%] left-8"
-            size={56}
+            className="top-[35%] left-[5%]"
+            size={85}
             delay="slow"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Projects Folder"
-            className="top-[35%] left-16"
-            size={56}
+            className="top-[52%] left-[12%]"
+            size={85}
             delay="delayed"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
             alt="Spotify"
-            className="top-[50%] left-24"
-            size={52}
+            className="top-[70%] left-[18%]"
+            size={80}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://cdn-icons-png.flaticon.com/512/975/975645.png"
             alt="Safari"
-            className="top-[65%] left-12"
-            size={52}
+            className="top-[85%] left-[8%]"
+            size={80}
             delay="slow"
           />
           
@@ -65,22 +65,22 @@ const Index = () => {
           <FloatingIcon 
             icon="https://img.icons8.com/fluency/512/trash.png"
             alt="Trash"
-            className="top-[15%] left-[38%]"
-            size={44}
+            className="top-[12%] left-[35%]"
+            size={75}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://img.icons8.com/fluency/512/pdf.png"
             alt="Document"
-            className="top-[20%] left-[45%]"
-            size={48}
+            className="top-[8%] left-[48%]"
+            size={80}
             delay="delayed"
           />
           <FloatingIcon 
             icon="https://img.icons8.com/fluency/512/image.png"
             alt="Image File"
-            className="top-[18%] right-[42%]"
-            size={52}
+            className="top-[10%] right-[45%]"
+            size={85}
             delay="slow"
           />
           
@@ -88,15 +88,15 @@ const Index = () => {
           <FloatingIcon 
             icon={macosFolder}
             alt="Photo Folder"
-            className="top-[68%] left-[40%]"
-            size={50}
+            className="top-[75%] left-[38%]"
+            size={80}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://img.icons8.com/fluency/512/calendar.png"
             alt="Notes"
-            className="top-[72%] right-[38%]"
-            size={46}
+            className="top-[82%] right-[40%]"
+            size={75}
             delay="delayed"
           />
           
@@ -104,36 +104,36 @@ const Index = () => {
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
             alt="Figma"
-            className="top-16 right-16"
-            size={56}
+            className="top-[18%] right-[5%]"
+            size={90}
             delay="slow"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Folder"
-            className="top-8 right-[25%]"
-            size={60}
+            className="top-[8%] right-[18%]"
+            size={95}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
             alt="CV Document"
-            className="top-4 right-[8%]"
-            size={48}
+            className="top-[5%] right-[8%]"
+            size={80}
             delay="delayed"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Graphics Folder"
-            className="top-[30%] right-[18%]"
-            size={58}
+            className="top-[40%] right-[15%]"
+            size={90}
             delay="slow"
           />
           <FloatingIcon 
             icon="https://img.icons8.com/fluency/512/calendar.png"
             alt="Calendar"
-            className="top-[15%] right-[5%]"
-            size={52}
+            className="top-[60%] right-[8%]"
+            size={80}
             delay="normal"
           />
         </div>
@@ -213,50 +213,50 @@ const Index = () => {
           <FloatingIcon 
             icon={macosFolder}
             alt="Folder"
-            className="bottom-24 left-12"
-            size={56}
+            className="bottom-[15%] left-[8%]"
+            size={85}
             delay="normal"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
             alt="Adobe Illustrator"
-            className="bottom-[40%] left-20"
-            size={52}
+            className="bottom-[35%] left-[15%]"
+            size={80}
             delay="delayed"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
             alt="Adobe Photoshop"
-            className="bottom-[25%] left-[10%]"
-            size={56}
+            className="bottom-[55%] left-[5%]"
+            size={85}
             delay="slow"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
             alt="Figma"
-            className="bottom-[35%] right-[8%]"
-            size={56}
+            className="bottom-[35%] right-[5%]"
+            size={90}
             delay="normal"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Projects Folder"
-            className="bottom-[20%] left-[18%]"
-            size={58}
+            className="bottom-[50%] left-[22%]"
+            size={90}
             delay="delayed"
           />
           <FloatingIcon 
             icon="https://cdn-icons-png.flaticon.com/512/337/337946.png"
             alt="CV Document"
-            className="bottom-16 right-[12%]"
-            size={48}
+            className="bottom-[15%] right-[12%]"
+            size={75}
             delay="slow"
           />
           <FloatingIcon 
             icon="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
             alt="Spotify"
-            className="bottom-[45%] left-[8%]"
-            size={50}
+            className="bottom-[70%] left-[18%]"
+            size={80}
             delay="normal"
           />
         </div>
