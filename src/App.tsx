@@ -19,7 +19,7 @@ const App = () => {
     }
   }, []);
 
-  const basename = import.meta.env.MODE === "production" ? "/Art-Portfolio-Website" : "";
+  const basename = import.meta.env.MODE === "production" ? "/art-portfolio" : "";
 
   return (
     <QueryClientProvider client={queryClient}>
