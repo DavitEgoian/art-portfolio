@@ -140,10 +140,10 @@ const Index = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 text-center">
-          <h1 className="text-[7.5rem] md:text-[12rem] leading-none font-light mb-4 tracking-tight">
+          <h1 className="text-[5.25rem] md:text-[8.4rem] leading-none font-light mb-4 tracking-tight">
             hi! welcome to<br />my showcase
           </h1>
-          <p className="text-5xl md:text-6xl text-muted-foreground font-light">
+          <p className="text-[2.1rem] md:text-[2.625rem] text-muted-foreground font-light">
             ( 2025 )
           </p>
         </div>
