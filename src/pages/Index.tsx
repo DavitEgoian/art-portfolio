@@ -169,11 +169,6 @@ const Index = () => {
           <span className="text-xl">poster_collections</span>
         </div>
 
-        <div className="flex items-center justify-center text-foreground mb-32">
-          <img src={macosFolder} alt="Folder" className="w-14 h-14" />
-          <span className="text-xl">poster_collections</span>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-8">
           <PortfolioCard 
             image={project3}
@@ -203,6 +198,11 @@ const Index = () => {
             alt="Typographic number design"
             className="h-[700px]"
           />
+        </div>
+
+        <div className="flex items-center justify-center text-foreground mb-32">
+          <img src={macosFolder} alt="Folder" className="w-14 h-14" />
+          <span className="text-xl">poster_collections</span>
         </div>
       </section>
 
