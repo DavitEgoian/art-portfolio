@@ -1,4 +1,4 @@
-import { Search } from "lucide-react";
+import { Search, ChevronLeft, ChevronRight, Copy } from "lucide-react";
 import { FloatingIcon } from "@/components/FloatingIcon";
 import { PortfolioCard } from "@/components/PortfolioCard";
 import project1 from "@/assets/project-1.jpg";
@@ -265,18 +265,29 @@ const Index = () => {
         <div className="max-w-3xl mx-auto relative z-10">
           <div className="bg-card rounded-lg overflow-hidden shadow-2xl">
             {/* Browser Chrome */}
-            <div className="bg-secondary px-4 py-3 flex items-center gap-2 border-b border-border">
+            <div className="bg-secondary px-4 py-3 flex items-center gap-3 border-b border-border">
               <div className="flex gap-2">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
               </div>
-              <div className="flex-1 mx-4">
-                <div className="bg-white rounded-full px-4 py-2 text-sm text-black flex items-center gap-2">
+              <div className="flex gap-2 ml-2">
+                <button className="text-gray-400 hover:text-gray-600">
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button className="text-gray-400 hover:text-gray-600">
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+              <div className="flex-1 mx-2">
+                <div className="bg-white rounded-lg px-4 py-2 text-sm text-black flex items-center gap-2">
                   <Search className="w-4 h-4 text-gray-500" />
                   <span>https://www.behance.net/polinakotryniak</span>
                 </div>
               </div>
+              <button className="text-gray-400 hover:text-gray-600">
+                <Copy className="w-5 h-5" />
+              </button>
             </div>
 
             {/* Browser Content */}
