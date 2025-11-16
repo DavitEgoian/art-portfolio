@@ -19,12 +19,14 @@ const App = () => {
     }
   }, []);
 
+  const basename = import.meta.env.MODE === "production" ? "/Art-Portfolio-Website" : "";
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/Art-Portfolio-Website">
+        <BrowserRouter basename={basename}>
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
