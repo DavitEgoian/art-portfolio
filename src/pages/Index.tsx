@@ -8,13 +8,27 @@ import project4 from "@/assets/project-4.jpg";
 import project5 from "@/assets/project-5.jpg";
 import project6 from "@/assets/project-6.jpg";
 import profilePhoto from "@/assets/profile-photo.jpg";
-import macosFolder from "@/assets/macos-folder-transparent.png";
+
+import macosFolder from "@/assets/folder-icon.png";
+import trashIcon from "@/assets/trash-icon.png";
+import safariBrowser from "@/assets/safari-browser.png";
+import photoboothIcon from "@/assets/photo-booth.png";
+import figmaIcon from "@/assets/figma-icon.png";
+import pdfIcon from "@/assets/pdf-icon.png";
+import adobeInDesign from "@/assets/adobe-InDesign.png";
+import adobePremierePro from "@/assets/adobe-premiere-pro.png";
+import adobeIllustrator from "@/assets/adobe-illustrator.png";
+import adobePhotoshop from "@/assets/adobe-photoshop.png";
+import spotifyLogo from "@/assets/spotify-logo.png";
 
 const Index = () => {
+  const cardSizeClass =
+    "h-[520px] sm:h-[420px] md:h-[520px] lg:h-[600px] w-full max-w-full md:max-w-[440px] mx-auto";
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+      <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center px-4 py-16 md:py-0 overflow-hidden">
         {/* Floating Icons */}
         <div className="absolute inset-0 pointer-events-none">
           {/* Left side icons */}
@@ -22,58 +36,50 @@ const Index = () => {
             icon={macosFolder}
             alt="Folder"
             className="top-[8%] left-[8%]"
-            size={90}
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+            icon={adobeIllustrator}
             alt="Adobe Illustrator"
             className="top-[18%] left-[15%]"
-            size={85}
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+            icon={adobePhotoshop}
             alt="Adobe Photoshop"
-            className="top-[35%] left-[5%]"
-            size={85}
+            className="hidden md:block top-[35%] left-[5%]"
             delay="slow"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Projects Folder"
-            className="top-[52%] left-[12%]"
-            size={85}
+            className="hidden md:block top-[52%] left-[12%]"
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+            icon={spotifyLogo}
             alt="Spotify"
             className="top-[70%] left-[18%]"
-            size={80}
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/975/975645.png"
+            icon={safariBrowser}
             alt="Safari"
             className="top-[85%] left-[8%]"
-            size={80}
             delay="slow"
           />
           
           {/* Icons above the text */}
           <FloatingIcon 
-            icon="https://img.icons8.com/fluency/512/trash.png"
+            icon={trashIcon}
             alt="Trash"
-            className="top-[12%] left-[35%]"
-            size={75}
+            className="hidden md:block top-[12%] left-[35%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://img.icons8.com/fluency/512/image.png"
-            alt="Image File"
+            icon={adobePremierePro}
+            alt="Premiere Pro"
             className="top-[10%] right-[45%]"
-            size={85}
             delay="slow"
           />
           
@@ -81,62 +87,50 @@ const Index = () => {
           <FloatingIcon 
             icon={macosFolder}
             alt="Photo Folder"
-            className="top-[75%] left-[38%]"
-            size={80}
+            className="hidden md:block top-[75%] left-[38%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://img.icons8.com/fluency/512/calendar.png"
-            alt="Notes"
+            icon={pdfIcon}
+            alt="PDF Logo"
             className="top-[82%] right-[40%]"
-            size={75}
             delay="delayed"
           />
           
           {/* Right side icons */}
-          <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-            alt="Figma"
-            className="top-[18%] right-[5%]"
-            size={90}
-            delay="slow"
-          />
+
           <FloatingIcon 
             icon={macosFolder}
             alt="Folder"
-            className="top-[8%] right-[18%]"
-            size={95}
+            className="hidden md:block top-[8%] right-[18%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://cdn.iconscout.com/icon/free/png-256/free-pdf-file-icon-download-in-svg-png-gif-file-formats--document-logo-format-files-and-folders-pack-icons-1184337.png"
-            alt="CV Document"
+            icon={photoboothIcon}
+            alt="Photobooth"
             className="top-[5%] right-[8%]"
-            size={80}
             delay="delayed"
           />
           <FloatingIcon 
-            icon={macosFolder}
+            icon={figmaIcon}
             alt="Graphics Folder"
-            className="top-[40%] right-[15%]"
-            size={90}
+            className="hidden md:block top-[40%] right-[15%]"
             delay="slow"
           />
           <FloatingIcon 
-            icon="https://img.icons8.com/fluency/512/calendar.png"
-            alt="Calendar"
+            icon={adobeInDesign}
+            alt="InDesign"
             className="top-[60%] right-[8%]"
-            size={80}
             delay="normal"
           />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center">
-          <h1 className="text-[5.25rem] md:text-[8.4rem] leading-none font-light mb-4 tracking-tight">
+        <div className="relative z-10 text-center max-w-5xl mx-auto">
+          <h1 className="text-[3.25rem] sm:text-[4.5rem] md:text-[6.5rem] lg:text-[8.4rem] leading-tight md:leading-[0.95] font-light mb-4 tracking-tight px-2">
             hi! welcome to<br />my showcase
           </h1>
-          <p className="text-[2.1rem] md:text-[2.625rem] text-muted-foreground font-light">
+          <p className="text-[1.5rem] sm:text-[1.9rem] md:text-[2.625rem] text-muted-foreground font-light">
             ( 2025 )
           </p>
         </div>
@@ -148,174 +142,167 @@ const Index = () => {
           <PortfolioCard 
             image={project1}
             alt="Creative workspace flat lay"
-            className="h-[700px]"
+            className={cardSizeClass}
           />
           <PortfolioCard 
             image={project2}
             alt="Mountain landscape poster"
-            className="h-[700px]"
+            className={cardSizeClass}
           />
         </div>
 
         <div className="flex items-center justify-center text-foreground mb-32">
           <img src={macosFolder} alt="Folder" className="w-14 h-14" />
-          <span className="text-xl">poster_collections</span>
+          <span className="text-xl">_poster_collections</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-8">
           <PortfolioCard 
             image={project3}
             alt="Movies poster design"
-            className="h-[700px]"
+            className={cardSizeClass}
           />
           <PortfolioCard 
             image={project4}
             alt="Abstract blue dots artwork"
-            className="h-[700px]"
+            className={cardSizeClass}
           />
         </div>
 
         <div className="flex items-center justify-center text-foreground mb-32">
           <img src={macosFolder} alt="Folder" className="w-14 h-14" />
-          <span className="text-xl">poster_collections</span>
+          <span className="text-xl">_poster_collections</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-8">
           <PortfolioCard 
             image={project5}
             alt="Polina typographic poster"
-            className="h-[700px]"
+            className={cardSizeClass}
           />
           <PortfolioCard 
             image={project6}
             alt="Typographic number design"
-            className="h-[700px]"
+            className={cardSizeClass}
           />
         </div>
 
         <div className="flex items-center justify-center text-foreground mb-32">
           <img src={macosFolder} alt="Folder" className="w-14 h-14" />
-          <span className="text-xl">poster_collections</span>
+          <span className="text-xl">_poster_collections</span>
         </div>
       </section>
 
       {/* Footer Section */}
       <section className="relative pt-0 pb-16 px-4 overflow-hidden">
         {/* More floating icons */}
-        <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="absolute inset-0 pointer-events-none z-0 max-[850px]:hidden">
           {/* Top left icons */}
           <FloatingIcon 
             icon={macosFolder}
             alt="Folder"
             className="top-[5%] left-[6%]"
-            size={85}
             delay="normal"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+            icon={adobeIllustrator}
             alt="Adobe Illustrator"
-            className="top-[18%] left-[8%]"
-            size={80}
+            className="top-[18%] left-[18%]"
             delay="delayed"
           />
           
           {/* Top right icons */}
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/337/337946.png"
-            alt="CV Document"
+            icon={pdfIcon}
+            alt="PDF Logo"
             className="top-[5%] right-[6%]"
-            size={80}
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+            icon={figmaIcon}
             alt="Figma"
-            className="top-[22%] right-[10%]"
-            size={85}
+            className="top-[30%] right-[16%]"
             delay="normal"
           />
           
           {/* Left side icons */}
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+            icon={adobePhotoshop}
             alt="Adobe Photoshop"
-            className="top-[42%] left-[3%]"
-            size={85}
+            className="top-[35%] left-[6%]"
             delay="slow"
           />
           <FloatingIcon 
             icon={macosFolder}
             alt="Projects Folder"
-            className="top-[60%] left-[8%]"
-            size={90}
+            className="top-[55%] left-[10%]"
             delay="delayed"
           />
           <FloatingIcon 
-            icon="https://cdn-icons-png.flaticon.com/512/975/975645.png"
+            icon={safariBrowser}
             alt="Safari"
             className="bottom-[12%] left-[5%]"
-            size={85}
             delay="normal"
           />
           
           {/* Right side icons */}
           <FloatingIcon 
-            icon="https://img.icons8.com/fluency/512/image.png"
-            alt="Image File"
+            icon={adobePremierePro}
+            alt="Premiere Pro"
             className="top-[55%] right-[6%]"
-            size={80}
             delay="slow"
           />
           
           {/* Bottom icons */}
           <FloatingIcon 
-            icon="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+            icon={spotifyLogo}
             alt="Spotify"
-            className="bottom-[12%] left-[20%]"
-            size={80}
+            className="top-[70%] right-[20%]"
             delay="normal"
           />
         </div>
 
         {/* Browser Mockup */}
-        <div className="max-w-2xl mx-auto relative z-10">
-          <div className="bg-card rounded-lg overflow-hidden shadow-2xl">
+        <div className="max-w-2xl w-full mx-auto relative z-10 px-2 sm:px-0">
+          <div className="bg-card rounded-lg overflow-hidden shadow-2xl border border-border">
             {/* Browser Chrome */}
-            <div className="bg-secondary px-4 py-3 flex items-center gap-3 border-b border-border">
-              <div className="flex gap-2">
+            <div className="bg-secondary px-3 py-2 sm:px-4 sm:py-3 flex flex-wrap items-center gap-3 border-b border-border">
+              <div className="flex gap-2 order-1">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
               </div>
-              <div className="flex gap-2 ml-2">
-                <button className="text-gray-400 hover:text-gray-600">
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-                <button className="text-gray-400 hover:text-gray-600">
-                  <ChevronRight className="w-5 h-5" />
+              <div className="flex items-center gap-2 flex-shrink-0 ml-0 sm:ml-2 order-2 max-[460px]:ml-auto">
+                <div className="flex gap-2">
+                  <button className="text-gray-400 hover:text-gray-600 p-1">
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <button className="text-gray-400 hover:text-gray-600 p-1">
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+                </div>
+                <button className="text-gray-400 hover:text-gray-600 p-1">
+                  <Copy className="w-5 h-5" />
                 </button>
               </div>
-              <div className="flex-1 mx-2">
-                <div className="bg-white rounded-lg px-4 py-2 text-sm text-black flex items-center gap-2">
+              <div className="flex-1 min-w-[140px] mx-0 sm:mx-2 order-3 max-[460px]:basis-full">
+                <div className="bg-white rounded-lg px-3 py-1.5 text-xs sm:text-sm text-black flex items-center gap-2">
                   <Search className="w-4 h-4 text-gray-500" />
-                  <span>https://www.behance.net/polinakotryniak</span>
+                  <span>https://www.behance.net/dedgrl</span>
                 </div>
               </div>
-              <button className="text-gray-400 hover:text-gray-600">
-                <Copy className="w-5 h-5" />
-              </button>
             </div>
 
             {/* Browser Content */}
-            <div className="bg-white p-16 text-center">
-              <h2 className="text-5xl md:text-6xl font-semibold italic text-black mb-12">
+            <div className="bg-white p-6 sm:p-10 lg:p-16 text-center flex flex-col items-center gap-8 sm:gap-12 min-h-[420px]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold italic text-black">
                 Thank You<br />for Attention
               </h2>
-              <div className="flex justify-center mb-12">
+              <div className="flex justify-center mt-auto">
                 <img 
                   src={profilePhoto} 
-                  alt="Polina Kotryniak" 
-                  className="w-48 h-48 rounded-none object-cover"
+                  alt="Meow" 
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-none object-cover"
                 />
               </div>
             </div>
