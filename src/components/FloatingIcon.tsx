@@ -19,7 +19,15 @@ export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal' }: Fl
       className={`absolute ${delayClass} ${className}`}
       style={{ width: ICON_SIZE, height: ICON_SIZE }}
     >
-      <img src={icon} alt={alt} className="w-full h-full object-contain" />
+      <img
+        src={icon}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        width={ICON_SIZE}
+        height={ICON_SIZE}
+        className="w-full h-full object-contain"
+      />
     </div>
   );
 };

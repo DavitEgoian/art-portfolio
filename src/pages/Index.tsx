@@ -10,16 +10,17 @@ import project6 from "@/assets/project-6.jpg";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 import macosFolder from "@/assets/folder-icon.png";
-import trashIcon from "@/assets/trash-icon.png";
-import safariBrowser from "@/assets/safari-browser.png";
-import photoboothIcon from "@/assets/photo-booth.png";
-import figmaIcon from "@/assets/figma-icon.png";
-import pdfIcon from "@/assets/pdf-icon.png";
-import adobeInDesign from "@/assets/adobe-InDesign.png";
-import adobePremierePro from "@/assets/adobe-premiere-pro.png";
-import adobeIllustrator from "@/assets/adobe-illustrator.png";
-import adobePhotoshop from "@/assets/adobe-photoshop.png";
-import spotifyLogo from "@/assets/spotify-logo.png";
+import macosFolderSmall from "@/assets/folder-icon.png?w=96&format=webp&as=src&imagetools";
+import trashIconSmall from "@/assets/trash-icon.png?w=96&format=webp&as=src&imagetools";
+import safariBrowserSmall from "@/assets/safari-browser.png?w=96&format=webp&as=src&imagetools";
+import photoboothIconSmall from "@/assets/photo-booth.png?w=96&format=webp&as=src&imagetools";
+import figmaIconSmall from "@/assets/figma-icon.png?w=96&format=webp&as=src&imagetools";
+import pdfIconSmall from "@/assets/pdf-icon.png?w=96&format=webp&as=src&imagetools";
+import adobeInDesignSmall from "@/assets/adobe-InDesign.png?w=96&format=webp&as=src&imagetools";
+import adobePremiereProSmall from "@/assets/adobe-premiere-pro.png?w=96&format=webp&as=src&imagetools";
+import adobeIllustratorSmall from "@/assets/adobe-illustrator.png?w=96&format=webp&as=src&imagetools";
+import adobePhotoshopSmall from "@/assets/adobe-photoshop.png?w=96&format=webp&as=src&imagetools";
+import spotifyLogoSmall from "@/assets/spotify-logo.png?w=96&format=webp&as=src&imagetools";
 
 const Index = () => {
   const cardSizeClass =
@@ -33,37 +34,37 @@ const Index = () => {
         <div className="absolute inset-0 pointer-events-none">
           {/* Left side icons */}
           <FloatingIcon 
-            icon={macosFolder}
+            icon={macosFolderSmall}
             alt="Folder"
             className="top-[8%] left-[8%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon={adobeIllustrator}
+            icon={adobeIllustratorSmall}
             alt="Adobe Illustrator"
             className="top-[18%] left-[15%]"
             delay="delayed"
           />
           <FloatingIcon 
-            icon={adobePhotoshop}
+            icon={adobePhotoshopSmall}
             alt="Adobe Photoshop"
             className="hidden md:block top-[35%] left-[5%]"
             delay="slow"
           />
           <FloatingIcon 
-            icon={macosFolder}
+            icon={macosFolderSmall}
             alt="Projects Folder"
             className="hidden md:block top-[52%] left-[12%]"
             delay="delayed"
           />
           <FloatingIcon 
-            icon={spotifyLogo}
+            icon={spotifyLogoSmall}
             alt="Spotify"
             className="top-[70%] left-[18%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon={safariBrowser}
+            icon={safariBrowserSmall}
             alt="Safari"
             className="top-[85%] left-[8%]"
             delay="slow"
@@ -71,13 +72,13 @@ const Index = () => {
           
           {/* Icons above the text */}
           <FloatingIcon 
-            icon={trashIcon}
+            icon={trashIconSmall}
             alt="Trash"
             className="hidden md:block top-[12%] left-[35%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon={adobePremierePro}
+            icon={adobePremiereProSmall}
             alt="Premiere Pro"
             className="top-[10%] right-[45%]"
             delay="slow"
@@ -85,13 +86,13 @@ const Index = () => {
           
           {/* Icons below the text */}
           <FloatingIcon 
-            icon={macosFolder}
+            icon={macosFolderSmall}
             alt="Photo Folder"
             className="hidden md:block top-[75%] left-[38%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon={pdfIcon}
+            icon={pdfIconSmall}
             alt="PDF Logo"
             className="top-[82%] right-[40%]"
             delay="delayed"
@@ -100,25 +101,25 @@ const Index = () => {
           {/* Right side icons */}
 
           <FloatingIcon 
-            icon={macosFolder}
+            icon={macosFolderSmall}
             alt="Folder"
             className="hidden md:block top-[8%] right-[18%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon={photoboothIcon}
+            icon={photoboothIconSmall}
             alt="Photobooth"
             className="top-[5%] right-[8%]"
             delay="delayed"
           />
           <FloatingIcon 
-            icon={figmaIcon}
+            icon={figmaIconSmall}
             alt="Graphics Folder"
             className="hidden md:block top-[40%] right-[15%]"
             delay="slow"
           />
           <FloatingIcon 
-            icon={adobeInDesign}
+            icon={adobeInDesignSmall}
             alt="InDesign"
             className="top-[60%] right-[8%]"
             delay="normal"
@@ -199,13 +200,13 @@ const Index = () => {
         <div className="absolute inset-0 pointer-events-none z-0 max-[850px]:hidden">
           {/* Top left icons */}
           <FloatingIcon 
-            icon={macosFolder}
+            icon={macosFolderSmall}
             alt="Folder"
             className="top-[5%] left-[6%]"
             delay="normal"
           />
           <FloatingIcon 
-            icon={adobeIllustrator}
+            icon={adobeIllustratorSmall}
             alt="Adobe Illustrator"
             className="top-[18%] left-[18%]"
             delay="delayed"
@@ -213,13 +214,13 @@ const Index = () => {
           
           {/* Top right icons */}
           <FloatingIcon 
-            icon={pdfIcon}
+            icon={pdfIconSmall}
             alt="PDF Logo"
             className="top-[5%] right-[6%]"
             delay="delayed"
           />
           <FloatingIcon 
-            icon={figmaIcon}
+            icon={figmaIconSmall}
             alt="Figma"
             className="top-[30%] right-[16%]"
             delay="normal"
@@ -227,19 +228,19 @@ const Index = () => {
           
           {/* Left side icons */}
           <FloatingIcon 
-            icon={adobePhotoshop}
+            icon={adobePhotoshopSmall}
             alt="Adobe Photoshop"
             className="top-[35%] left-[6%]"
             delay="slow"
           />
           <FloatingIcon 
-            icon={macosFolder}
+            icon={macosFolderSmall}
             alt="Projects Folder"
             className="top-[55%] left-[10%]"
             delay="delayed"
           />
           <FloatingIcon 
-            icon={safariBrowser}
+            icon={safariBrowserSmall}
             alt="Safari"
             className="bottom-[12%] left-[5%]"
             delay="normal"
@@ -247,7 +248,7 @@ const Index = () => {
           
           {/* Right side icons */}
           <FloatingIcon 
-            icon={adobePremierePro}
+            icon={adobePremiereProSmall}
             alt="Premiere Pro"
             className="top-[55%] right-[6%]"
             delay="slow"
@@ -255,7 +256,7 @@ const Index = () => {
           
           {/* Bottom icons */}
           <FloatingIcon 
-            icon={spotifyLogo}
+            icon={spotifyLogoSmall}
             alt="Spotify"
             className="top-[70%] right-[20%]"
             delay="normal"
