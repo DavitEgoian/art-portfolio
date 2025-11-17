@@ -9,7 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: mode === "production" ? "/art-portfolio/" : "/",
+  // Allow overriding the deploy base with VITE_BASE_PATH; default to root for custom domains.
+  base: process.env.VITE_BASE_PATH?.trim() || "/",
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
