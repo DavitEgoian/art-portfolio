@@ -301,11 +301,11 @@ const Index = () => {
             </div>
 
             {/* Browser Content */}
-            <div className="bg-white p-6 sm:p-10 lg:p-16 text-center flex flex-col items-center gap-8 sm:gap-12 min-h-[420px]">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold italic text-black">
+            <div className="bg-white p-6 sm:p-10 lg:p-16 text-center flex flex-col items-center justify-center gap-8 sm:gap-12 min-h-[420px]">
+              <h2 className="text-5xl sm:text-5xl md:text-6xl font-semibold italic text-black">
                 Thank You<br />for Attention
               </h2>
-              <div className="flex justify-center mt-auto">
+              <div className="flex justify-center">
                 <img 
                   src={profilePhoto} 
                   alt="Meow" 
