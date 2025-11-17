@@ -19,7 +19,8 @@ const App = () => {
     }
   }, []);
 
-  const basename = import.meta.env.MODE === "production" ? "/art-portfolio" : "";
+  const viteBase = import.meta.env.BASE_URL || "/";
+  const basename = viteBase === "/" ? "/" : viteBase.replace(/\/$/, "");
 
   return (
     <QueryClientProvider client={queryClient}>
