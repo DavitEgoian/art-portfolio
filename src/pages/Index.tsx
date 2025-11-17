@@ -286,10 +286,16 @@ const Index = () => {
                 </button>
               </div>
               <div className="flex-1 min-w-[140px] mx-0 sm:mx-2 order-3 max-[460px]:basis-full">
-                <div className="bg-white rounded-lg px-3 py-1.5 text-xs sm:text-sm text-black flex items-center gap-2">
+                <button
+                  className="bg-white rounded-lg px-3 py-1.5 text-xs sm:text-sm text-black flex items-center gap-2 w-full text-left hover:bg-gray-100 transition-colors"
+                  onClick={() =>
+                    window.open("https://www.behance.net/dedgrl", "_blank", "noopener,noreferrer")
+                  }
+                  type="button"
+                >
                   <Search className="w-4 h-4 text-gray-500" />
                   <span>https://www.behance.net/dedgrl</span>
-                </div>
+                </button>
               </div>
             </div>
 
