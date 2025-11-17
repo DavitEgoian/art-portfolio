@@ -1,11 +1,11 @@
 import { Search, ChevronLeft, ChevronRight, Copy } from "lucide-react";
 import { FloatingIcon } from "@/components/FloatingIcon";
 import { PortfolioCard } from "@/components/PortfolioCard";
-import project1 from "@/assets/project-1.jpg";
+import project1 from "@/assets/project-1.jpg?w=1400&format=webp&quality=80&as=src&imagetools";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import project3 from "@/assets/project-3.jpg?w=1400&format=webp&quality=80&as=src&imagetools";
 import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
+import project5 from "@/assets/project-5.jpg?w=1400&format=webp&quality=80&as=src&imagetools";
 import project6 from "@/assets/project-6.jpg";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
