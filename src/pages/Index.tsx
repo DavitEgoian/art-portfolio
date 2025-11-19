@@ -32,7 +32,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center px-4 py-16 md:py-0 overflow-hidden">
+      <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center px-4 pt-32 pb-56 md:pb-64 overflow-hidden">
         {/* Floating Icons */}
         <div className="absolute inset-0 pointer-events-none">
           {/* Left side icons */}
@@ -46,36 +46,38 @@ const Index = () => {
           <FloatingIcon 
             icon={adobeIllustratorSmall}
             alt="Adobe Illustrator"
-            className="top-[18%] left-[15%]"
+            className="hidden min-[550px]:block top-[18%] left-[15%]"
             delay="delayed"
             loading="eager"
+            strongGlow
           />
           <FloatingIcon 
             icon={adobePhotoshopSmall}
             alt="Adobe Photoshop"
-            className="hidden md:block top-[35%] left-[5%]"
+            className="hidden min-[850px]:block top-[35%] left-[5%]"
             delay="slow"
             loading="eager"
+            strongGlow
           />
           <FloatingIcon 
             icon={macosFolderSmall}
             alt="Projects Folder"
             label="poster_collection"
-            className="hidden md:block top-[52%] left-[12%]"
+            className="hidden min-[1150px]:block top-[52%] left-[12%]"
             delay="delayed"
             loading="eager"
           />
           <FloatingIcon 
             icon={spotifyLogoSmall}
             alt="Spotify"
-            className="top-[70%] left-[18%]"
+            className="top-[75%] md:top-[70%] left-[18%]"
             delay="normal"
             loading="eager"
           />
           <FloatingIcon 
             icon={safariBrowserSmall}
             alt="Safari"
-            className="top-[85%] left-[8%]"
+            className="hidden top-[78%] md:top-[85%] left-[8%]"
             delay="slow"
             loading="eager"
           />
@@ -94,6 +96,7 @@ const Index = () => {
             className="top-[10%] right-[45%]"
             delay="slow"
             loading="eager"
+            strongGlow
           />
           
           {/* Icons below the text */}
@@ -107,7 +110,7 @@ const Index = () => {
           <FloatingIcon 
             icon={pdfIconSmall}
             alt="PDF Logo"
-            className="top-[82%] right-[40%]"
+            className="hidden min-[550px]:block top-[82%] right-[40%]"
             delay="delayed"
             loading="eager"
           />
@@ -128,27 +131,30 @@ const Index = () => {
             className="top-[5%] right-[8%]"
             delay="delayed"
             loading="eager"
+            strongGlow
           />
           <FloatingIcon 
             icon={figmaIconSmall}
             alt="Graphics Folder"
-            className="hidden md:block top-[40%] right-[15%]"
+            className="hidden min-[1300px]:block top-[40%] right-[15%]"
             delay="slow"
             loading="eager"
+            strongGlow
           />
           <FloatingIcon 
             icon={adobeInDesignSmall}
             alt="InDesign"
-            className="top-[60%] right-[8%]"
+            className="top-[65%] md:top-[60%] right-[8%]"
             delay="normal"
             loading="eager"
+            strongGlow
           />
 
           <FloatingIcon 
             icon={project2Small}
             alt="project preview"
             label="qari.jpg"
-            className="top-[75%] right-[25%]"
+            className="top-[78%] md:top-[75%] right-[25%]"
             delay="normal"
           />
         </div>
@@ -246,6 +252,7 @@ const Index = () => {
             alt="Adobe Illustrator"
             className="top-[18%] left-[18%]"
             delay="delayed"
+            strongGlow
           />
           
           {/* Top right icons */}
@@ -260,6 +267,7 @@ const Index = () => {
             alt="Figma"
             className="top-[30%] right-[16%]"
             delay="normal"
+            strongGlow
           />
           
           {/* Left side icons */}
@@ -268,6 +276,7 @@ const Index = () => {
             alt="Adobe Photoshop"
             className="top-[35%] left-[6%]"
             delay="slow"
+            strongGlow
           />
           <FloatingIcon 
             icon={macosFolderSmall}
@@ -288,6 +297,7 @@ const Index = () => {
             alt="Premiere Pro"
             className="top-[55%] right-[6%]"
             delay="slow"
+            strongGlow
           />
           
           {/* Bottom icons */}

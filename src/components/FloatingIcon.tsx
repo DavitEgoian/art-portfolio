@@ -7,9 +7,10 @@ interface FloatingIconProps {
   delay?: 'normal' | 'delayed' | 'slow';
   loading?: "lazy" | "eager";
   label?: string;
+  strongGlow?: boolean;
 }
 
-export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal', loading = "lazy", label }: FloatingIconProps) => {
+export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal', loading = "lazy", label, strongGlow = false }: FloatingIconProps) => {
   const delayClass = {
     normal: 'floating-icon',
     delayed: 'floating-icon-delayed',
@@ -24,9 +25,17 @@ export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal', load
       <img
         src={icon}
         alt=""
-        className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125"
+        className={`absolute inset-0 w-full h-full object-contain blur-lg transition-all duration-500 ${strongGlow ? 'opacity-100 scale-125 blur-xl' : 'opacity-60 scale-110'}`}
         aria-hidden="true"
       />
+      {strongGlow && (
+        <img
+          src={icon}
+          alt=""
+          className="absolute inset-0 w-full h-full object-contain blur-2xl opacity-50 scale-150"
+          aria-hidden="true"
+        />
+      )}
       <img
         src={icon}
         alt={alt}
