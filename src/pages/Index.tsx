@@ -180,7 +180,10 @@ const Index = () => {
         </div>
 
         <div className="flex items-center justify-center text-foreground mb-32">
-          <img src={macosFolder} alt="Folder" className="w-14 h-14" />
+          <div className="relative w-14 h-14 mr-3">
+            <img src={macosFolder} alt="" className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125" aria-hidden="true" />
+            <img src={macosFolder} alt="Folder" className="relative z-10 w-full h-full object-contain" />
+          </div>
           <span className="text-xl">_poster_collections</span>
         </div>
 
@@ -198,7 +201,10 @@ const Index = () => {
         </div>
 
         <div className="flex items-center justify-center text-foreground mb-32">
-          <img src={macosFolder} alt="Folder" className="w-14 h-14" />
+          <div className="relative w-14 h-14 mr-3">
+            <img src={macosFolder} alt="" className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125" aria-hidden="true" />
+            <img src={macosFolder} alt="Folder" className="relative z-10 w-full h-full object-contain" />
+          </div>
           <span className="text-xl">_poster_collections</span>
         </div>
 
@@ -216,7 +222,10 @@ const Index = () => {
         </div>
 
         <div className="flex items-center justify-center text-foreground mb-32">
-          <img src={macosFolder} alt="Folder" className="w-14 h-14" />
+          <div className="relative w-14 h-14 mr-3">
+            <img src={macosFolder} alt="" className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125" aria-hidden="true" />
+            <img src={macosFolder} alt="Folder" className="relative z-10 w-full h-full object-contain" />
+          </div>
           <span className="text-xl">_poster_collections</span>
         </div>
       </section>

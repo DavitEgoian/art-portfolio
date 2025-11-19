@@ -23,12 +23,18 @@ export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal', load
     >
       <img
         src={icon}
+        alt=""
+        className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125"
+        aria-hidden="true"
+      />
+      <img
+        src={icon}
         alt={alt}
         loading={loading}
         decoding="async"
         width={ICON_SIZE}
         height={ICON_SIZE}
-        className="w-full h-full object-contain"
+        className="relative z-10 w-full h-full object-contain"
       />
         {label && (
         <span className="text-[13px] font-sans text-white font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] whitespace-nowrap ml-0.5">
