@@ -5,9 +5,10 @@ interface FloatingIconProps {
   alt: string;
   className?: string;
   delay?: 'normal' | 'delayed' | 'slow';
+  loading?: "lazy" | "eager";
 }
 
-export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal' }: FloatingIconProps) => {
+export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal', loading = "lazy" }: FloatingIconProps) => {
   const delayClass = {
     normal: 'floating-icon',
     delayed: 'floating-icon-delayed',
@@ -22,7 +23,7 @@ export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal' }: Fl
       <img
         src={icon}
         alt={alt}
-        loading="lazy"
+        loading={loading}
         decoding="async"
         width={ICON_SIZE}
         height={ICON_SIZE}

@@ -1,15 +1,15 @@
 import { Search, ChevronLeft, ChevronRight, Copy } from "lucide-react";
 import { FloatingIcon } from "@/components/FloatingIcon";
 import { PortfolioCard } from "@/components/PortfolioCard";
-import project1 from "@/assets/project-1.jpg?w=1400&format=webp&quality=80&as=src&imagetools";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg?w=1400&format=webp&quality=80&as=src&imagetools";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg?w=1400&format=webp&quality=80&as=src&imagetools";
-import project6 from "@/assets/project-6.jpg";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import project1 from "@/assets/project-1.jpg?w=900&format=webp&quality=80&as=src&imagetools";
+import project2 from "@/assets/project-2.jpg?w=900&format=webp&quality=80&as=src&imagetools";
+import project3 from "@/assets/project-3.jpg?w=900&format=webp&quality=80&as=src&imagetools";
+import project4 from "@/assets/project-4.jpg?w=900&format=webp&quality=80&as=src&imagetools";
+import project5 from "@/assets/project-5.jpg?w=900&format=webp&quality=80&as=src&imagetools";
+import project6 from "@/assets/project-6.jpg?w=900&format=webp&quality=80&as=src&imagetools";
+import profilePhoto from "@/assets/profile-photo.jpg?w=400&format=webp&quality=80&as=src&imagetools";
 
-import macosFolder from "@/assets/folder-icon.png";
+import macosFolder from "@/assets/folder-icon.png?w=96&format=webp&as=src&imagetools";
 import macosFolderSmall from "@/assets/folder-icon.png?w=96&format=webp&as=src&imagetools";
 import trashIconSmall from "@/assets/trash-icon.png?w=96&format=webp&as=src&imagetools";
 import safariBrowserSmall from "@/assets/safari-browser.png?w=96&format=webp&as=src&imagetools";
@@ -38,36 +38,42 @@ const Index = () => {
             alt="Folder"
             className="top-[8%] left-[8%]"
             delay="normal"
+            loading="eager"
           />
           <FloatingIcon 
             icon={adobeIllustratorSmall}
             alt="Adobe Illustrator"
             className="top-[18%] left-[15%]"
             delay="delayed"
+            loading="eager"
           />
           <FloatingIcon 
             icon={adobePhotoshopSmall}
             alt="Adobe Photoshop"
             className="hidden md:block top-[35%] left-[5%]"
             delay="slow"
+            loading="eager"
           />
           <FloatingIcon 
             icon={macosFolderSmall}
             alt="Projects Folder"
             className="hidden md:block top-[52%] left-[12%]"
             delay="delayed"
+            loading="eager"
           />
           <FloatingIcon 
             icon={spotifyLogoSmall}
             alt="Spotify"
             className="top-[70%] left-[18%]"
             delay="normal"
+            loading="eager"
           />
           <FloatingIcon 
             icon={safariBrowserSmall}
             alt="Safari"
             className="top-[85%] left-[8%]"
             delay="slow"
+            loading="eager"
           />
           
           {/* Icons above the text */}
@@ -76,12 +82,14 @@ const Index = () => {
             alt="Trash"
             className="hidden md:block top-[12%] left-[35%]"
             delay="normal"
+            loading="eager"
           />
           <FloatingIcon 
             icon={adobePremiereProSmall}
             alt="Premiere Pro"
             className="top-[10%] right-[45%]"
             delay="slow"
+            loading="eager"
           />
           
           {/* Icons below the text */}
@@ -90,12 +98,14 @@ const Index = () => {
             alt="Photo Folder"
             className="hidden md:block top-[75%] left-[38%]"
             delay="normal"
+            loading="eager"
           />
           <FloatingIcon 
             icon={pdfIconSmall}
             alt="PDF Logo"
             className="top-[82%] right-[40%]"
             delay="delayed"
+            loading="eager"
           />
           
           {/* Right side icons */}
@@ -105,24 +115,28 @@ const Index = () => {
             alt="Folder"
             className="hidden md:block top-[8%] right-[18%]"
             delay="normal"
+            loading="eager"
           />
           <FloatingIcon 
             icon={photoboothIconSmall}
             alt="Photobooth"
             className="top-[5%] right-[8%]"
             delay="delayed"
+            loading="eager"
           />
           <FloatingIcon 
             icon={figmaIconSmall}
             alt="Graphics Folder"
             className="hidden md:block top-[40%] right-[15%]"
             delay="slow"
+            loading="eager"
           />
           <FloatingIcon 
             icon={adobeInDesignSmall}
             alt="InDesign"
             className="top-[60%] right-[8%]"
             delay="normal"
+            loading="eager"
           />
         </div>
 
