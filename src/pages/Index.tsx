@@ -77,7 +77,7 @@ const Index = () => {
           <FloatingIcon 
             icon={safariBrowserSmall}
             alt="Safari"
-            className="hidden top-[78%] md:top-[85%] left-[8%]"
+            className="hidden min-[800px]:block top-[78%] md:top-[75%] left-[8%]"
             delay="slow"
             loading="eager"
           />
