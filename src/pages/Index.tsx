@@ -22,6 +22,9 @@ import adobeIllustratorSmall from "@/assets/adobe-illustrator.png?w=96&format=we
 import adobePhotoshopSmall from "@/assets/adobe-photoshop.png?w=96&format=webp&as=src&imagetools";
 import spotifyLogoSmall from "@/assets/spotify-logo.png?w=96&format=webp&as=src&imagetools";
 
+import project1Small from "@/assets/project-1.jpg?w=96&format=webp&as=src&imagetools";
+import project2Small from "@/assets/project-2.jpg?w=96&format=webp&as=src&imagetools";
+
 const Index = () => {
   const cardSizeClass =
     "h-[520px] sm:h-[420px] md:h-[520px] lg:h-[600px] w-full max-w-full md:max-w-[440px] mx-auto";
@@ -57,6 +60,7 @@ const Index = () => {
           <FloatingIcon 
             icon={macosFolderSmall}
             alt="Projects Folder"
+            label="poster_collection"
             className="hidden md:block top-[52%] left-[12%]"
             delay="delayed"
             loading="eager"
@@ -113,6 +117,7 @@ const Index = () => {
           <FloatingIcon 
             icon={macosFolderSmall}
             alt="Folder"
+            label="projectssssss"
             className="hidden md:block top-[8%] right-[18%]"
             delay="normal"
             loading="eager"
@@ -137,6 +142,14 @@ const Index = () => {
             className="top-[60%] right-[8%]"
             delay="normal"
             loading="eager"
+          />
+
+          <FloatingIcon 
+            icon={project2Small}
+            alt="project preview"
+            label="qari.jpg"
+            className="top-[75%] right-[25%]"
+            delay="normal"
           />
         </div>
 
