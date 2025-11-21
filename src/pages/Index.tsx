@@ -39,7 +39,7 @@ const Index = () => {
           <FloatingIcon 
             icon={macosFolderSmall}
             alt="Folder"
-            className="top-[8%] left-[8%]"
+            className="top-[3%] left-[8%]"
             delay="normal"
             loading="eager"
           />
@@ -70,14 +70,14 @@ const Index = () => {
           <FloatingIcon 
             icon={spotifyLogoSmall}
             alt="Spotify"
-            className="top-[75%] md:top-[70%] left-[18%]"
+            className="hidden min-[800px]:block top-[70%] left-[22%]"
             delay="normal"
             loading="eager"
           />
           <FloatingIcon 
             icon={safariBrowserSmall}
             alt="Safari"
-            className="hidden min-[800px]:block top-[78%] md:top-[75%] left-[8%]"
+            className=" top-[72%] left-[7%]"
             delay="slow"
             loading="eager"
           />
@@ -86,14 +86,14 @@ const Index = () => {
           <FloatingIcon 
             icon={trashIconSmall}
             alt="Trash"
-            className="hidden md:block top-[12%] left-[35%]"
+            className="hidden md:block top-[8%] left-[35%]"
             delay="normal"
             loading="eager"
           />
           <FloatingIcon 
             icon={adobePremiereProSmall}
             alt="Premiere Pro"
-            className="top-[10%] right-[45%]"
+            className="top-[16%] right-[45%]"
             delay="slow"
             loading="eager"
             strongGlow
@@ -144,7 +144,7 @@ const Index = () => {
           <FloatingIcon 
             icon={adobeInDesignSmall}
             alt="InDesign"
-            className="top-[65%] md:top-[60%] right-[8%]"
+            className="top-[65%] right-[4%]"
             delay="normal"
             loading="eager"
             strongGlow
@@ -154,13 +154,13 @@ const Index = () => {
             icon={project2Small}
             alt="project preview"
             label="qari.jpg"
-            className="top-[78%] md:top-[75%] right-[25%]"
+            className="top-[78%] right-[28%]"
             delay="normal"
           />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-5xl mx-auto">
+        <div className="relative z-10 text-center max-w-5xl mx-auto pt-20 md:pt-12">
           <h1 className="text-[3.25rem] sm:text-[4.5rem] md:text-[6.5rem] lg:text-[8.4rem] leading-tight md:leading-[0.95] font-light mb-4 tracking-tight px-2">
             hi! welcome to<br />my showcase
           </h1>
