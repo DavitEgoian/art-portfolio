@@ -27,6 +27,7 @@ export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal', load
         alt=""
         className={`absolute inset-0 w-full h-full object-contain blur-lg transition-all duration-500 ${strongGlow ? 'opacity-100 scale-125 blur-xl' : 'opacity-60 scale-110'}`}
         aria-hidden="true"
+        decoding="async"
       />
       {strongGlow && (
         <img
@@ -34,6 +35,7 @@ export const FloatingIcon = ({ icon, alt, className = "", delay = 'normal', load
           alt=""
           className="absolute inset-0 w-full h-full object-contain blur-2xl opacity-50 scale-150"
           aria-hidden="true"
+          decoding="async"
         />
       )}
       <img

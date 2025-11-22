@@ -9,18 +9,18 @@ import project5 from "@/assets/project-5.jpg?w=900&format=webp&quality=80&as=src
 import project6 from "@/assets/project-6.jpg?w=900&format=webp&quality=80&as=src&imagetools";
 import profilePhoto from "@/assets/profile-photo.jpg?w=400&format=webp&quality=80&as=src&imagetools";
 
-import macosFolder from "@/assets/folder-icon.png?w=96&format=webp&as=src&imagetools";
-import macosFolderSmall from "@/assets/folder-icon.png?w=96&format=webp&as=src&imagetools";
-import trashIconSmall from "@/assets/trash-icon.png?w=96&format=webp&as=src&imagetools";
-import safariBrowserSmall from "@/assets/safari-browser.png?w=96&format=webp&as=src&imagetools";
-import photoboothIconSmall from "@/assets/photo-booth.png?w=96&format=webp&as=src&imagetools";
-import figmaIconSmall from "@/assets/figma-icon.png?w=96&format=webp&as=src&imagetools";
-import pdfIconSmall from "@/assets/pdf-icon.png?w=96&format=webp&as=src&imagetools";
-import adobeInDesignSmall from "@/assets/adobe-InDesign.png?w=96&format=webp&as=src&imagetools";
-import adobePremiereProSmall from "@/assets/adobe-premiere-pro.png?w=96&format=webp&as=src&imagetools";
-import adobeIllustratorSmall from "@/assets/adobe-illustrator.png?w=96&format=webp&as=src&imagetools";
-import adobePhotoshopSmall from "@/assets/adobe-photoshop.png?w=96&format=webp&as=src&imagetools";
-import spotifyLogoSmall from "@/assets/spotify-logo.png?w=96&format=webp&as=src&imagetools";
+import macosFolder from "@/assets/folder-icon.webp?w=96&as=src&imagetools";
+import macosFolderSmall from "@/assets/folder-icon.webp?w=96&as=src&imagetools";
+import trashIconSmall from "@/assets/trash-icon.webp?w=96&as=src&imagetools";
+import safariBrowserSmall from "@/assets/safari-browser.webp?w=96&as=src&imagetools";
+import photoboothIconSmall from "@/assets/photo-booth.webp?w=96&as=src&imagetools";
+import figmaIconSmall from "@/assets/figma-icon.webp?w=96&as=src&imagetools";
+import pdfIconSmall from "@/assets/pdf-icon.webp?w=96&as=src&imagetools";
+import adobeInDesignSmall from "@/assets/adobe-InDesign.webp?w=96&as=src&imagetools";
+import adobePremiereProSmall from "@/assets/adobe-premiere-pro.webp?w=96&as=src&imagetools";
+import adobeIllustratorSmall from "@/assets/adobe-illustrator.webp?w=96&as=src&imagetools";
+import adobePhotoshopSmall from "@/assets/adobe-photoshop.webp?w=96&as=src&imagetools";
+import spotifyLogoSmall from "@/assets/spotify-logo.webp?w=96&as=src&imagetools";
 
 import project1Small from "@/assets/project-1.jpg?w=96&format=webp&as=src&imagetools";
 import project2Small from "@/assets/project-2.jpg?w=96&format=webp&as=src&imagetools";
