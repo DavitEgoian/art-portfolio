@@ -1,6 +1,8 @@
 import { Search, ChevronLeft, ChevronRight, Copy } from "lucide-react";
 import { FloatingIcon } from "@/components/FloatingIcon";
 import { PortfolioCard } from "@/components/PortfolioCard";
+import { SEO } from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
 import project1 from "@/assets/project-1.jpg?w=900&format=webp&quality=80&as=src&imagetools";
 import project2 from "@/assets/project-2.jpg?w=900&format=webp&quality=80&as=src&imagetools";
 import project3 from "@/assets/project-3.jpg?w=900&format=webp&quality=80&as=src&imagetools";
@@ -29,8 +31,27 @@ const Index = () => {
   const cardSizeClass =
     "h-[520px] sm:h-[420px] md:h-[520px] lg:h-[600px] w-full max-w-full md:max-w-[440px] mx-auto";
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dedgrl",
+    "url": "https://davitegoian.github.io/art-portfolio",
+    "sameAs": [
+      "https://www.behance.net/dedgrl",
+      "https://twitter.com/Dedgrl"
+    ],
+    "jobTitle": "Visual Artist",
+    "description": "Visual artist specializing in poster design and creative direction."
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center px-4 pt-32 pb-56 md:pb-64 overflow-hidden">
         {/* Floating Icons */}
