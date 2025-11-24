@@ -27,23 +27,33 @@ import spotifyLogoSmall from "@/assets/spotify-logo.webp?w=96&as=src&imagetools"
 import project1Small from "@/assets/project-1.jpg?w=96&format=webp&as=src&imagetools";
 import project2Small from "@/assets/project-2.jpg?w=96&format=webp&as=src&imagetools";
 
+const cardSizeClass =
+  "h-[520px] sm:h-[420px] md:h-[520px] lg:h-[600px] w-full max-w-full md:max-w-[440px] mx-auto";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dedgrl",
+  "url": "https://davitegoian.github.io/art-portfolio",
+  "sameAs": [
+    "https://www.behance.net/dedgrl",
+    "https://twitter.com/Dedgrl"
+  ],
+  "jobTitle": "Visual Artist",
+  "description": "Visual artist specializing in poster design and creative direction."
+};
+
+const PosterCollectionSeparator = ({ icon }: { icon: string }) => (
+  <div className="flex items-center justify-center text-foreground mb-32">
+    <div className="relative w-14 h-14 mr-3">
+      <img src={icon} alt="" className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125" aria-hidden="true" loading="lazy" decoding="async" />
+      <img src={icon} alt="Folder" className="relative z-10 w-full h-full object-contain" loading="lazy" decoding="async" />
+    </div>
+    <span className="text-xl">_poster_collections</span>
+  </div>
+);
+
 const Index = () => {
-  const cardSizeClass =
-    "h-[520px] sm:h-[420px] md:h-[520px] lg:h-[600px] w-full max-w-full md:max-w-[440px] mx-auto";
-
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dedgrl",
-    "url": "https://davitegoian.github.io/art-portfolio",
-    "sameAs": [
-      "https://www.behance.net/dedgrl",
-      "https://twitter.com/Dedgrl"
-    ],
-    "jobTitle": "Visual Artist",
-    "description": "Visual artist specializing in poster design and creative direction."
-  };
-
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEO />
@@ -206,13 +216,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center text-foreground mb-32">
-          <div className="relative w-14 h-14 mr-3">
-            <img src={macosFolder} alt="" className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125" aria-hidden="true" />
-            <img src={macosFolder} alt="Folder" className="relative z-10 w-full h-full object-contain" />
-          </div>
-          <span className="text-xl">_poster_collections</span>
-        </div>
+        <PosterCollectionSeparator icon={macosFolder} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-8">
           <PortfolioCard 
@@ -227,13 +231,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center text-foreground mb-32">
-          <div className="relative w-14 h-14 mr-3">
-            <img src={macosFolder} alt="" className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125" aria-hidden="true" />
-            <img src={macosFolder} alt="Folder" className="relative z-10 w-full h-full object-contain" />
-          </div>
-          <span className="text-xl">_poster_collections</span>
-        </div>
+        <PosterCollectionSeparator icon={macosFolder} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-8">
           <PortfolioCard 
@@ -248,13 +246,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center text-foreground mb-32">
-          <div className="relative w-14 h-14 mr-3">
-            <img src={macosFolder} alt="" className="absolute inset-0 w-full h-full object-contain blur-xl opacity-60 scale-125" aria-hidden="true" />
-            <img src={macosFolder} alt="Folder" className="relative z-10 w-full h-full object-contain" />
-          </div>
-          <span className="text-xl">_poster_collections</span>
-        </div>
+        <PosterCollectionSeparator icon={macosFolder} />
       </section>
 
       {/* Footer Section */}
@@ -377,6 +369,8 @@ const Index = () => {
                   src={profilePhoto} 
                   alt="Meow" 
                   className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-none object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

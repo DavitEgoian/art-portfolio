@@ -12,6 +12,7 @@ export const PortfolioCard = ({ image, alt, className = "" }: PortfolioCardProps
         alt={alt} 
         className="w-full h-full object-cover"
         loading="lazy"
+        decoding="async"
       />
     </div>
   );
