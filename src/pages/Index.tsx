@@ -360,15 +360,15 @@ const Index = () => {
             </div>
 
             {/* Browser Content */}
-            <div className="bg-white p-6 sm:p-10 lg:p-16 text-center flex flex-col items-center justify-center gap-8 sm:gap-12 min-h-[420px]">
-              <h2 className="text-5xl sm:text-5xl md:text-6xl font-semibold italic text-black">
+            <div className="bg-white pt-6 sm:pt-10 lg:pt-16 text-center flex flex-col items-center justify-between min-h-[420px]">
+              <h2 className="text-5xl sm:text-5xl md:text-6xl font-semibold italic text-black px-6 sm:px-10 lg:px-16">
                 Thank You<br />for Attention
               </h2>
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-auto">
                 <img 
                   src={profilePhoto} 
                   alt="Meow" 
-                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-none object-cover"
+                  className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-none object-cover object-top"
                   loading="lazy"
                   decoding="async"
                 />
