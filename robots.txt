@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://davitegoian.github.io/art-portfolio/sitemap.xml
