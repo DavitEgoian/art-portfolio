@@ -196,7 +196,7 @@ const Index = () => {
             hi! welcome to<br />my showcase
           </h1>
           <p className="text-[1.5rem] sm:text-[1.9rem] md:text-[2.625rem] text-muted-foreground font-light">
-            ( 2025 - 2026)
+            ( 2025 - 2026 )
           </p>
         </div>
       </section>
