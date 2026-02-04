@@ -198,6 +198,9 @@ const Index = () => {
           <p className="text-[1.5rem] sm:text-[1.9rem] md:text-[2.625rem] text-muted-foreground font-light">
             ( 2025 - 2026 )
           </p>
+          <span className="block mt-14 pb-10 text-lg text-gray-500 italic max-w-lg mx-auto w-full">
+            This collection shows the transformation of reality through digital art, juxtaposing raw  original photography with imaginative edits that reveal my vision of  how the scene was truly meant to look.
+          </span>
         </div>
       </section>
 
