@@ -2,7 +2,6 @@ import { Search, ChevronLeft, ChevronRight, Copy } from "lucide-react";
 import { FloatingIcon } from "@/components/FloatingIcon";
 import { PortfolioCard } from "@/components/PortfolioCard";
 import { SEO } from "@/components/SEO";
-import { Helmet } from "react-helmet-async";
 import project1 from "@/assets/project-1.jpg?w=900&format=webp&quality=80&as=src&imagetools";
 import project2 from "@/assets/project-2.jpg?w=900&format=webp&quality=80&as=src&imagetools";
 import project3 from "@/assets/project-3.jpg?w=900&format=webp&quality=80&as=src&imagetools";
@@ -30,17 +29,78 @@ import project2Small from "@/assets/project-2.jpg?w=96&format=webp&as=src&imaget
 const cardSizeClass =
   "h-[520px] sm:h-[420px] md:h-[520px] lg:h-[600px] w-full max-w-full md:max-w-[440px] mx-auto";
 
+const toAbsoluteUrl = (path: string) => {
+  const origin = "https://davitegoian.github.io";
+  if (path.startsWith("http")) return path;
+  return path.startsWith("/") ? `${origin}${path}` : `${origin}/${path}`;
+};
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Dedgrl",
-  "url": "https://davitegoian.github.io/art-portfolio",
-  "sameAs": [
-    "https://www.behance.net/dedgrl",
-    "https://twitter.com/Dedgrl"
-  ],
-  "jobTitle": "Visual Artist",
-  "description": "Visual artist specializing in poster design and creative direction."
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Dedgrl",
+      "url": "https://davitegoian.github.io/art-portfolio",
+      "sameAs": [
+        "https://www.behance.net/dedgrl",
+        "https://twitter.com/Dedgrl"
+      ],
+      "jobTitle": "Visual Artist",
+      "description": "Visual artist specializing in poster design and creative direction.",
+      "image": toAbsoluteUrl(profilePhoto)
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://davitegoian.github.io/art-portfolio",
+      "name": "Dedgrl's Showcase",
+      "description": "A creative portfolio showcasing visual art, poster design, and creative direction.",
+      "author": { "@type": "Person", "name": "Dedgrl" }
+    },
+    {
+      "@type": "ImageGallery",
+      "name": "Portfolio 2025-2026",
+      "description": "A collection of poster designs and visual art projects.",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": toAbsoluteUrl(project1),
+          "name": "Creative workspace flat lay",
+          "description": "A top-down view of a creative workspace featuring design tools."
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": toAbsoluteUrl(project2),
+          "name": "Mountain landscape poster",
+          "description": "A scenic poster design featuring a mountain landscape."
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": toAbsoluteUrl(project3),
+          "name": "Movies poster design",
+          "description": "A conceptual poster design for a movie."
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": toAbsoluteUrl(project4),
+          "name": "Abstract blue dots artwork",
+          "description": "An abstract digital artwork featuring blue patterns."
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": toAbsoluteUrl(project5),
+          "name": "Polina typographic poster",
+          "description": "A typographic poster design focusing on the name Polina."
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": toAbsoluteUrl(project6),
+          "name": "Typographic number design",
+          "description": "Assessment of visual hierarchy through typographic number design."
+        }
+      ]
+    }
+  ]
 };
 
 const PosterCollectionSeparator = ({ icon }: { icon: string }) => (
@@ -56,12 +116,7 @@ const PosterCollectionSeparator = ({ icon }: { icon: string }) => (
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <SEO />
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO structuredData={structuredData} />
       {/* Hero Section */}
       <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center px-4 pt-32 pb-56 md:pb-64 overflow-hidden">
         {/* Floating Icons */}
