@@ -381,7 +381,12 @@ const Index = () => {
         </div>
 
         {/* Browser Mockup */}
-        <div className="max-w-2xl w-full mx-auto relative z-10 px-2 sm:px-0">
+        <a 
+          href="https://www.behance.net/dedgrl" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="max-w-2xl w-full mx-auto relative z-10 px-2 sm:px-0 block"
+        >
           <div className="bg-card rounded-lg overflow-hidden shadow-2xl border border-border">
             {/* Browser Chrome */}
             <div className="bg-secondary px-3 py-2 sm:px-4 sm:py-3 flex flex-wrap items-center gap-3 border-b border-border">
@@ -392,28 +397,24 @@ const Index = () => {
               </div>
               <div className="flex items-center gap-2 flex-shrink-0 ml-0 sm:ml-2 order-2 max-[460px]:ml-auto">
                 <div className="flex gap-2">
-                  <button className="text-gray-400 hover:text-gray-600 p-1">
+                  <button className="text-gray-400 hover:text-gray-600 p-1" disabled>
                     <ChevronLeft className="w-5 h-5" />
                   </button>
-                  <button className="text-gray-400 hover:text-gray-600 p-1">
+                  <button className="text-gray-400 hover:text-gray-600 p-1" disabled>
                     <ChevronRight className="w-5 h-5" />
                   </button>
                 </div>
-                <button className="text-gray-400 hover:text-gray-600 p-1">
+                <button className="text-gray-400 hover:text-gray-600 p-1" disabled>
                   <Copy className="w-5 h-5" />
                 </button>
               </div>
               <div className="flex-1 min-w-[140px] mx-0 sm:mx-2 order-3 max-[460px]:basis-full">
-                <button
-                  className="bg-white rounded-lg px-3 py-1.5 text-xs sm:text-sm text-black flex items-center gap-2 w-full text-left hover:bg-gray-100 transition-colors"
-                  onClick={() =>
-                    window.open("https://www.behance.net/dedgrl", "_blank", "noopener,noreferrer")
-                  }
-                  type="button"
+                <div
+                  className="bg-white rounded-lg px-3 py-1.5 text-xs sm:text-sm text-black flex items-center gap-2 w-full text-left"
                 >
                   <Search className="w-4 h-4 text-gray-500" />
                   <span>https://www.behance.net/dedgrl</span>
-                </button>
+                </div>
               </div>
             </div>
 
@@ -433,7 +434,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </section>
     </div>
   );
