@@ -1,8 +1,8 @@
 # Portfolio Website
 
-A Windows XP–themed creative portfolio for [Davit Egoian](https://davitegoian.tech). The site recreates the classic Bliss desktop experience—taskbar, Start menu, draggable windows, and desktop shortcuts—while presenting brand strategy, projects, experience, and contact details inside familiar XP-style applications.
+A Windows XP–themed creative portfolio for [Davit Egoian](https://dedgrl.me/). The site recreates the classic Bliss desktop experience—taskbar, Start menu, draggable windows, and desktop shortcuts—while presenting brand strategy, projects, experience, and contact details inside familiar XP-style applications.
 
-**Live site:** [https://davitegoian.tech](https://davitegoian.tech)
+**Live site:** [https://dedgrl.me/](https://dedgrl.me/)
 
 ## Features
 
@@ -75,7 +75,7 @@ Output is written to the `build/` folder.
 
 ### Deploy
 
-The project is configured for GitHub Pages with homepage `https://davitegoian.tech`:
+The project is configured for GitHub Pages with homepage `https://dedgrl.me/`:
 
 ```bash
 npm run deploy
