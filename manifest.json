@@ -1,0 +1,22 @@
+{
+  "short_name": "Davit Egoian",
+  "name": "Davit Egoian — Creative Director Portfolio",
+  "description": "Creative Director portfolio — brand strategy, art direction, and campaign design.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "bliss.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#245edc",
+  "background_color": "#245edc"
+}

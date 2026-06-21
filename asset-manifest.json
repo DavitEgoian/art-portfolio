@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da58d6d0.css",
+    "main.js": "/static/js/main.7ce30ce5.js",
+    "static/media/behance-logo.png": "/static/media/behance-logo.3617c7602c77d8c37dec.png",
+    "index.html": "/index.html",
+    "static/media/instagram-logo.svg": "/static/media/instagram-logo.e68b3014bb804deacbd079227239e99e.svg",
+    "static/media/figma-logo.svg": "/static/media/figma-logo.7ef3bb883b32f33c6c28aac4d65bf047.svg",
+    "static/media/after-effects-logo.svg": "/static/media/after-effects-logo.6747effb5c306f7792c5e82483b8a844.svg",
+    "static/media/premiere-logo.svg": "/static/media/premiere-logo.5021704b2efab2cba27c7d5d62b0cd24.svg",
+    "static/media/illustrator-logo.svg": "/static/media/illustrator-logo.e53568f68060af6994287a5bbf0b2425.svg",
+    "static/media/photoshop-logo.svg": "/static/media/photoshop-logo.42e038b3e54cec18c6fcdd7605c1ccd1.svg",
+    "static/media/indesign-logo.svg": "/static/media/indesign-logo.e3b4983bf227c57888a94d3310416b2f.svg",
+    "static/media/miro-logo.svg": "/static/media/miro-logo.b210c5baa85631c30bb0b4fd049af1a1.svg",
+    "main.da58d6d0.css.map": "/static/css/main.da58d6d0.css.map",
+    "main.7ce30ce5.js.map": "/static/js/main.7ce30ce5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da58d6d0.css",
+    "static/js/main.7ce30ce5.js"
+  ]
+}
