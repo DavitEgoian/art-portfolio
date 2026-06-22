@@ -1,5 +1,5 @@
 {
-  "homepage": "https://davitegoian.tech",
+  "homepage": "https://dedgrl.me",
   "name": "portfolio-website",
   "version": "0.2.0",
   "private": true,
@@ -19,7 +19,8 @@
     "prebuild": "node scripts/sync-behance-projects.js",
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "postbuild": "node scripts/copy-404.js",
+    "deploy": "gh-pages -d build --dotfiles",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
