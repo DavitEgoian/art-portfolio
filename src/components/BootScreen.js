@@ -1,6 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { useSound } from "../context/SoundContext";
+import {
+  preloadDesktopAssets,
+  waitForDesktopLayout,
+} from "../utils/preloadAssets";
 import { setBooted } from "../utils/storage";
 
 const BOOT_LINES = [
@@ -11,44 +15,99 @@ const BOOT_LINES = [
   "Preparing your creative workspace...",
 ];
 
+const BOOT_MIN_MS = 3200;
+const BOOT_MAX_MS = 10000;
+
 function BootScreen({ onComplete }) {
   const { playSound } = useSound();
   const reduceMotion = useReducedMotion();
   const [progress, setProgress] = useState(0);
   const [lineIndex, setLineIndex] = useState(0);
+  const cancelledRef = useRef(false);
+  const completedRef = useRef(false);
+  const timersRef = useRef({});
 
   useEffect(() => {
-    if (reduceMotion) {
+    cancelledRef.current = false;
+    completedRef.current = false;
+    const assetsPromise = preloadDesktopAssets();
+    const bootStartedAt = Date.now();
+
+    const clearTimers = () => {
+      window.clearInterval(timersRef.current.progress);
+      window.clearInterval(timersRef.current.line);
+      window.clearTimeout(timersRef.current.done);
+      window.clearTimeout(timersRef.current.max);
+    };
+
+    const completeBoot = () => {
+      if (completedRef.current || cancelledRef.current) return;
+      completedRef.current = true;
+      clearTimers();
       setBooted();
       onComplete();
-      return undefined;
+    };
+
+    const finishBoot = async (minDuration = BOOT_MIN_MS) => {
+      const elapsed = Date.now() - bootStartedAt;
+      const remaining = Math.max(0, minDuration - elapsed);
+
+      if (remaining > 0) {
+        await new Promise((resolve) => {
+          timersRef.current.done = window.setTimeout(resolve, remaining);
+        });
+      }
+
+      if (cancelledRef.current) return;
+
+      await Promise.race([
+        assetsPromise,
+        new Promise((resolve) => {
+          timersRef.current.max = window.setTimeout(resolve, BOOT_MAX_MS);
+        }),
+      ]);
+      await waitForDesktopLayout();
+      completeBoot();
+    };
+
+    if (reduceMotion) {
+      finishBoot(0);
+      return () => {
+        cancelledRef.current = true;
+        clearTimers();
+      };
     }
 
     playSound("startup");
 
-    const progressTimer = window.setInterval(() => {
+    timersRef.current.progress = window.setInterval(() => {
       setProgress((value) => Math.min(value + 4, 100));
     }, 90);
 
-    const lineTimer = window.setInterval(() => {
+    timersRef.current.line = window.setInterval(() => {
       setLineIndex((index) => Math.min(index + 1, BOOT_LINES.length - 1));
     }, 650);
 
-    const doneTimer = window.setTimeout(() => {
-      setBooted();
-      onComplete();
-    }, 3200);
+    finishBoot();
 
     return () => {
-      window.clearInterval(progressTimer);
-      window.clearInterval(lineTimer);
-      window.clearTimeout(doneTimer);
+      cancelledRef.current = true;
+      clearTimers();
     };
   }, [onComplete, playSound, reduceMotion]);
 
   const handleSkip = () => {
-    setBooted();
-    onComplete();
+    window.clearInterval(timersRef.current.progress);
+    window.clearInterval(timersRef.current.line);
+    window.clearTimeout(timersRef.current.done);
+    window.clearTimeout(timersRef.current.max);
+
+    Promise.all([preloadDesktopAssets(), waitForDesktopLayout()]).then(() => {
+      if (completedRef.current) return;
+      completedRef.current = true;
+      setBooted();
+      onComplete();
+    });
   };
 
   if (reduceMotion) {

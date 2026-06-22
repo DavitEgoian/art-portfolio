@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { SoundProvider } from "./context/SoundContext";
 import { WindowProvider } from "./context/WindowContext";
@@ -9,10 +9,15 @@ import XpTaskbar from "./components/XpTaskbar";
 import XpWindowLayer from "./components/XpWindowLayer";
 import XpStartMenu from "./components/XpStartMenu";
 import XpWallpaper from "./components/XpWallpaper";
+import { preloadDesktopAssets } from "./utils/preloadAssets";
 import { hasBooted } from "./utils/storage";
 
 function App() {
   const [booting, setBooting] = useState(() => !hasBooted());
+
+  useEffect(() => {
+    preloadDesktopAssets();
+  }, []);
 
   return (
     <SoundProvider>

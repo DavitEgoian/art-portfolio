@@ -27,7 +27,7 @@ function getIconLaunchOrigin(event) {
 }
 
 function XpDesktop() {
-  const { selectedIcon, setSelectedIcon, openApp } = useWindows();
+  const { selectedIcon, setSelectedIcon, openApp, windows } = useWindows();
   const { playSound } = useSound();
   const [launchingIcon, setLaunchingIcon] = useState(null);
   const [iconOrder, setIconOrder] = useState(
@@ -47,6 +47,7 @@ function XpDesktop() {
         .filter(Boolean),
     [iconOrder]
   );
+  const hideIcons = windows.some((window) => !window.minimized && window.maximized);
 
   const launchApp = useCallback(
     (appId, event) => {
@@ -127,7 +128,7 @@ function XpDesktop() {
   return (
     <main
       id="xp-desktop"
-      className="xp-desktop"
+      className={`xp-desktop ${hideIcons ? "is-hidden" : ""}`}
       onClick={handleDesktopClick}
       onContextMenu={handleContextMenu}
       onKeyDown={(event) => {
@@ -157,7 +158,14 @@ function XpDesktop() {
                 aria-label={`Open ${shortcut.label}`}
                 aria-current={isSelected ? "true" : undefined}
               >
-                <XpIcon src={shortcut.icon} size={48} className="xp-desktop__icon-img" />
+                <XpIcon
+                  src={shortcut.icon}
+                  size={48}
+                  className="xp-desktop__icon-img"
+                  loading="eager"
+                  decoding="sync"
+                  fetchPriority="high"
+                />
                 <span>{shortcut.label}</span>
               </button>
             </li>

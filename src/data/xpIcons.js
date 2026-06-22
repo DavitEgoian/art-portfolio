@@ -23,7 +23,14 @@ export const XP_ICONS = {
   power: `${ICON_BASE}/power.png`,
 };
 
-function XpIcon({ src, size = 32, className = "" }) {
+function XpIcon({
+  src,
+  size = 32,
+  className = "",
+  loading,
+  decoding = "async",
+  fetchPriority,
+}) {
   return (
     <img
       src={src}
@@ -32,6 +39,9 @@ function XpIcon({ src, size = 32, className = "" }) {
       height={size}
       className={`xp-icon ${className}`.trim()}
       draggable={false}
+      loading={loading}
+      decoding={decoding}
+      fetchPriority={fetchPriority}
     />
   );
 }

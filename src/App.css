@@ -96,10 +96,13 @@ body {
 }
 
 .xp-desktop-window.is-maximized {
-  left: 7.5rem;
+  position: fixed;
+  left: 0;
   top: 0;
-  width: calc(100% - 7.5rem);
-  height: calc(100% - var(--xp-taskbar-height));
+  right: 0;
+  bottom: var(--xp-taskbar-height);
+  width: auto;
+  height: auto;
 }
 
 .xp-desktop-window__frame {
@@ -347,6 +350,11 @@ body {
   --xp-icon-size: min(48px, max(22px, calc(var(--xp-icon-slot) * 0.52)));
   --xp-icon-gap: min(0.75rem, max(0.15rem, calc(var(--xp-icon-slot) * 0.06)));
   --xp-icon-font: min(11px, max(8px, calc(var(--xp-icon-slot) * 0.14)));
+}
+
+.xp-desktop.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .xp-desktop__icons {
@@ -1574,10 +1582,27 @@ body {
   }
 
   .xp-desktop-window.is-maximized {
+    position: absolute !important;
     left: 0 !important;
     top: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
     width: 100% !important;
-    height: calc(100% - var(--xp-taskbar-height)) !important;
+    height: 100% !important;
+  }
+
+  .xp-desktop-window {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .xp-window__resize-handle {
+    display: none;
   }
 
   .xp-window__titlebar {

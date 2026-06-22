@@ -13,6 +13,7 @@ import {
   clampWindowPosition,
   clampWindowSize,
   getInitialWindowLayout,
+  isMobileViewport,
 } from "../utils/windowLayout";
 
 const WindowContext = createContext(null);
@@ -56,6 +57,43 @@ export function WindowProvider({ children }) {
     return () => window.clearTimeout(timeoutId);
   }, [windows, focusedId]);
 
+  useEffect(() => {
+    if (!isMobileViewport()) return;
+
+    const reflowMobileWindows = () => {
+      setWindows((prev) => {
+        if (!prev.length) return prev;
+
+        return prev.map((window, index) => {
+          const app = XP_APPS[window.appId];
+          const layout = getInitialWindowLayout(app, index);
+          return {
+            ...window,
+            x: layout.x,
+            y: layout.y,
+            width: layout.width,
+            height: layout.height,
+          };
+        });
+      });
+    };
+
+    reflowMobileWindows();
+
+    const viewport = window.visualViewport;
+    const handleViewportChange = () => {
+      requestAnimationFrame(reflowMobileWindows);
+    };
+
+    viewport?.addEventListener("resize", handleViewportChange);
+    window.addEventListener("resize", handleViewportChange);
+
+    return () => {
+      viewport?.removeEventListener("resize", handleViewportChange);
+      window.removeEventListener("resize", handleViewportChange);
+    };
+  }, []);
+
   const focusWindow = useCallback((instanceId) => {
     zIndexRef.current += 1;
     setFocusedId(instanceId);
@@ -80,12 +118,23 @@ export function WindowProvider({ children }) {
       if (existing) {
         zIndexRef.current += 1;
         setFocusedId(existing.instanceId);
+        const mobileLayout = isMobileViewport()
+          ? getInitialWindowLayout(app, prev.indexOf(existing))
+          : null;
         return prev.map((window) =>
           window.appId === appId
             ? {
                 ...window,
                 minimized: false,
                 zIndex: zIndexRef.current,
+                ...(mobileLayout
+                  ? {
+                      x: mobileLayout.x,
+                      y: mobileLayout.y,
+                      width: mobileLayout.width,
+                      height: mobileLayout.height,
+                    }
+                  : {}),
               }
             : window
         );
@@ -165,6 +214,8 @@ export function WindowProvider({ children }) {
   }, [focusWindow]);
 
   const moveWindow = useCallback((instanceId, x, y) => {
+    if (isMobileViewport()) return;
+
     setWindows((prev) =>
       prev.map((window) => {
         if (window.instanceId !== instanceId) return window;
@@ -181,6 +232,8 @@ export function WindowProvider({ children }) {
   }, []);
 
   const resizeWindow = useCallback((instanceId, width, height) => {
+    if (isMobileViewport()) return;
+
     setWindows((prev) =>
       prev.map((window) => {
         if (window.instanceId !== instanceId || window.maximized) return window;
