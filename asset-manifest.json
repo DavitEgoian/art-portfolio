@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.da58d6d0.css",
-    "main.js": "/static/js/main.7ce30ce5.js",
+    "main.css": "/static/css/main.a9a73550.css",
+    "main.js": "/static/js/main.5acf98f0.js",
     "static/media/behance-logo.png": "/static/media/behance-logo.3617c7602c77d8c37dec.png",
     "index.html": "/index.html",
     "static/media/instagram-logo.svg": "/static/media/instagram-logo.e68b3014bb804deacbd079227239e99e.svg",
@@ -12,11 +12,11 @@
     "static/media/photoshop-logo.svg": "/static/media/photoshop-logo.42e038b3e54cec18c6fcdd7605c1ccd1.svg",
     "static/media/indesign-logo.svg": "/static/media/indesign-logo.e3b4983bf227c57888a94d3310416b2f.svg",
     "static/media/miro-logo.svg": "/static/media/miro-logo.b210c5baa85631c30bb0b4fd049af1a1.svg",
-    "main.da58d6d0.css.map": "/static/css/main.da58d6d0.css.map",
-    "main.7ce30ce5.js.map": "/static/js/main.7ce30ce5.js.map"
+    "main.a9a73550.css.map": "/static/css/main.a9a73550.css.map",
+    "main.5acf98f0.js.map": "/static/js/main.5acf98f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.da58d6d0.css",
-    "static/js/main.7ce30ce5.js"
+    "static/css/main.a9a73550.css",
+    "static/js/main.5acf98f0.js"
   ]
 }

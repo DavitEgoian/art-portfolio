@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dedgrl.me/sitemap.xml
+Sitemap: https://davitegoian.tech/sitemap.xml
