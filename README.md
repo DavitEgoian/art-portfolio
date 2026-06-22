@@ -57,8 +57,8 @@ A Windows XP–themed creative portfolio for [Davit Egoian](https://dedgrl.me/).
 ### Install and run
 
 ```bash
-git clone https://github.com/DavitEgoian/Portfolio-Website.git
-cd Portfolio-Website
+git clone https://github.com/DavitEgoian/art-portfolio.git
+cd art-portfolio
 npm install
 npm start
 ```
