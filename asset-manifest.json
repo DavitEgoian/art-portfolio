@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.a9a73550.css",
-    "main.js": "/static/js/main.5acf98f0.js",
+    "main.js": "/static/js/main.56dce617.js",
     "static/media/behance-logo.png": "/static/media/behance-logo.3617c7602c77d8c37dec.png",
     "index.html": "/index.html",
-    "static/media/instagram-logo.svg": "/static/media/instagram-logo.e68b3014bb804deacbd079227239e99e.svg",
-    "static/media/figma-logo.svg": "/static/media/figma-logo.7ef3bb883b32f33c6c28aac4d65bf047.svg",
-    "static/media/after-effects-logo.svg": "/static/media/after-effects-logo.6747effb5c306f7792c5e82483b8a844.svg",
-    "static/media/premiere-logo.svg": "/static/media/premiere-logo.5021704b2efab2cba27c7d5d62b0cd24.svg",
-    "static/media/illustrator-logo.svg": "/static/media/illustrator-logo.e53568f68060af6994287a5bbf0b2425.svg",
-    "static/media/photoshop-logo.svg": "/static/media/photoshop-logo.42e038b3e54cec18c6fcdd7605c1ccd1.svg",
-    "static/media/indesign-logo.svg": "/static/media/indesign-logo.e3b4983bf227c57888a94d3310416b2f.svg",
-    "static/media/miro-logo.svg": "/static/media/miro-logo.b210c5baa85631c30bb0b4fd049af1a1.svg",
+    "static/media/instagram-logo.svg": "/static/media/instagram-logo.c319623fe6ce3c4080f2aa0a37ad3a2b.svg",
+    "static/media/figma-logo.svg": "/static/media/figma-logo.e96e0410e259c95b95d5cba3aaf4d38d.svg",
+    "static/media/after-effects-logo.svg": "/static/media/after-effects-logo.ad2945853ad60d64079799a972ac0f0f.svg",
+    "static/media/premiere-logo.svg": "/static/media/premiere-logo.afff6ebb0544016a21a1fa9dc798280b.svg",
+    "static/media/illustrator-logo.svg": "/static/media/illustrator-logo.54b24d74602802576596c819fa5c8529.svg",
+    "static/media/photoshop-logo.svg": "/static/media/photoshop-logo.bfbffff722988796dd91cafc425f40a2.svg",
+    "static/media/indesign-logo.svg": "/static/media/indesign-logo.aae66cad80c9fff3e211dddd2e9ca331.svg",
+    "static/media/miro-logo.svg": "/static/media/miro-logo.9a15cf79ba3f108f374a849919947044.svg",
     "main.a9a73550.css.map": "/static/css/main.a9a73550.css.map",
-    "main.5acf98f0.js.map": "/static/js/main.5acf98f0.js.map"
+    "main.56dce617.js.map": "/static/js/main.56dce617.js.map"
   },
   "entrypoints": [
     "static/css/main.a9a73550.css",
-    "static/js/main.5acf98f0.js"
+    "static/js/main.56dce617.js"
   ]
 }
